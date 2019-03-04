@@ -9,8 +9,7 @@
 # production
 /build
 
-#myConfig
-/src/config
+
 
 # misc
 .DS_Store
