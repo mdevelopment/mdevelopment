@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import TextFieldGroup2 from '../common/TextFieldGroup2';
 import { addPost } from '../../actions/postActions';
-import adminKey from '../../utils/adminKey';
+import adminKey from '../../config/adminKey';
 
 
 class PostForm extends Component {

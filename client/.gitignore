@@ -3,15 +3,14 @@
 # dependencies
 /node_modules
 
-
-
 # testing
 /coverage
 
 # production
 /build
 
-/client/src/utils/adminKey.js
+#myConfig
+/src/config
 
 # misc
 .DS_Store
