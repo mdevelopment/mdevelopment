@@ -5,6 +5,7 @@ import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import TextFieldGroup2 from '../common/TextFieldGroup2';
 import { addPost } from '../../actions/postActions';
 import adminKey from '../../config/adminKey';
+import adminFunc from '../../config/adminKey';
 
 
 class PostForm extends Component {
