@@ -19,17 +19,17 @@ class Navbar extends Component {
 
     const authLinks = (
    
-      <ul className="navbar-nav ml-auto">
+      <ul className="navbar-nav ml-auto" style={{paddingTop:'16px'}}>
         <li className="nav-item ">
           <Link className="nav-link" to="/feed"
-          style={{fontSize:'.9em',paddingLeft:'15px', textDecoration: 'none',color:'white',}}
+          style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white',}}
           >
             Posts
           </Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/profiles"
-            style={{fontSize:'.9em',paddingLeft:'15px', textDecoration: 'none',color:'white',}}
+            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white',}}
           >
 
             Guest Book
@@ -37,23 +37,23 @@ class Navbar extends Component {
         </li>
          <li className="nav-item">
           <Link className="nav-link" to="/dashboard"
-          style={{fontSize:'.9em',paddingLeft:'15px', textDecoration: 'none',color:'white',}}
+          style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white',}}
           >
             Your Dashboard
           </Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" style={{ paddingRight: '12px', color:'white',}} >
           <a
             href=""
             onClick={this.onLogoutClick.bind(this)}
             className="nav-link"
-            style={{fontSize:'.9em',paddingLeft:'15px', textDecoration: 'none'}}
+            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none'}}
           >
             <img
               className="rounded-circle"
               src={user.avatar}
               alt={user.name}
-              style={{ width: '25px', marginRight: '2px', color:'white',}}
+              style={{fontSize:'1em', width: '25px', marginRight: '2px', color:'white',}}
               title="You must have a Gravatar connected to your email to display an image"
             />{' '}
             Logout
@@ -65,11 +65,11 @@ class Navbar extends Component {
 
     const guestLinks = (
       <ul className="navbar-nav ml-auto"
-      style={{ paddingTop:'10px', paddingLeft:'2px' }}
+      style={{ paddingTop:'12px', paddingLeft:'2px' }}
       >
       <li className="nav-item">
                 <Link className="nav-link" to="/profiles"
-               style={{fontSize:'.9em',paddingLeft:'15px', color:'white', textDecoration: 'none'}}
+               style={{fontSize:'1em',paddingLeft:'15px', color:'white', textDecoration: 'none'}}
                 >
                   {' '}
                   Guest Book
@@ -77,14 +77,14 @@ class Navbar extends Component {
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/register"
-          style={{fontSize:'.9em', paddingLeft:'15px',color:'white',  textDecoration: 'none'}}
+          style={{fontSize:'1em', paddingLeft:'15px',color:'white',  textDecoration: 'none'}}
           >
             Sign Up
           </Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/login"
-          style={{fontSize:'.9em',paddingLeft:'15px',color:'white', textDecoration: 'none'}}
+          style={{fontSize:'1em',paddingLeft:'15px',color:'white', textDecoration: 'none'}}
           >
             Login
           </Link>
@@ -95,14 +95,14 @@ class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark mb-3  myNavStyle" >
+      <nav className="navbar navbar-expand-sm navbar-dark mb-3 sticky-top myNavStyle" >
         <div className="container">
           <Link className="navbar-brand" to="/">
             <img
-            style={{ width: '108%', height:'108%', marginLeft: '9px', marginTop:'0px'}}
+            style={{ width: '350px', marginLeft: '9px', marginTop:'0px'}}
             alt="logo"
               src={logo}
-              
+              className="logoM"
             />
           </Link>
           <button

@@ -14,16 +14,13 @@ background: rgb(0,102,179);
 @media only screen and (max-width: 768px)
     {
     	
-.logoM{margin-left:0px;padding-left:0px; padding-right:5px;
-    }
+
 }
 
 @media only screen and (max-width: 480px)
     {
-    	
+    	.logoM{width:300px!important;margin-left:0px;padding-left:0px; padding-right:10px;}
 nav-link .regBtn{margin-left:0px;
     }
 }
-
-
 
