@@ -16,9 +16,10 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.2.0"
   },
-  "homepage" : "https://lit-peak-66808.herokuapp.com/",
+  "homepage": "https://lit-peak-66808.herokuapp.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
