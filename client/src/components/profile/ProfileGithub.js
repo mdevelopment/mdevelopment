@@ -34,13 +34,16 @@ class ProfileGithub extends Component {
   render() {
     const { repos } = this.state;
 
+
     const repoItems = repos.map(repo => (
+
       <div key={repo.id} className="card card-body bg-dark mb-2">
         <div className="row">
           <div className="col-md-12">
             <h4>
               <Link to={repo.html_url} className="" target="_blank" style={{color:'#e0ec1d', fontSize:'1.4em'}}>
                 {repo.name}
+
               </Link>
             </h4>
             <h3>{repo.description}</h3>
@@ -49,6 +52,7 @@ class ProfileGithub extends Component {
         
 
         </div>
+         {console.log("REPO URLS: "+ repo.html_url)}
       </div>
     ));
     return (
