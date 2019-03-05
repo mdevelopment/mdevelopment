@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../../MyFonts.css';
 
@@ -41,16 +41,12 @@ class ProfileGithub extends Component {
         <div className="row">
           <div className="col-md-12">
             <h4>
-              <Link to={repo.html_url} className="" target="_blank" style={{color:'#e0ec1d', fontSize:'1.4em'}}>
+              <a target="_blank" href={repo.html_url} className="" target="_blank" style={{color:'#e0ec1d', fontSize:'1.4em'}}>
                 {repo.name}
-
-              </Link>
+              </a>
             </h4>
             <h3>{repo.description}</h3>
           </div>
-
-        
-
         </div>
          {console.log("REPO URLS: "+ repo.html_url)}
       </div>
