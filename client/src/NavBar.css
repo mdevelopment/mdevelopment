@@ -7,6 +7,8 @@ background: rgb(0,102,179);
 /*background: -webkit-linear-gradient(top, rgb(0,0,0) 37%,rgb(132,132,132) 96%);  Chrome10-25,Safari5.1-6 */
 /*background: linear-gradient(to bottom, rgb(0,0,0) 37%,rgb(132,132,132) 96%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#848484',GradientType=0 );  IE6-9 */
+
+font-family:"Arial", sans-sserif;
 }
 
 .removeThatBorder { outline: 0 !important }
