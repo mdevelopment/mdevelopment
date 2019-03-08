@@ -23,6 +23,7 @@ background-image: url('http://placekitten.com/1500/1000');
 background-blend-mode: color;
 }
 
+input, textarea {  font-family:"Ariel", sans-serif; }
 /*
 .landing-inner {
   padding-top: 80px;
