@@ -18,10 +18,30 @@ app.use(bodyParser.json());
 const db = require('./config/keys').mongoURI;
 
 // Connect to MongoDB
+
+
+
+/*var MongoClient = require('mongodb').MongoClient;
+
+//var uri = db;
+MongoClient.connect(db, { useNewUrlParser: true }, function(err, client) {
+    const collection = client.db("test").collection("devices");
+    // perform actions on the collection object
+    console.log(db);
+    // setDB(db);
+    client.close();
+});
+
+setDB = theDB => {
+    return String(theDB);
+}
+
+*/
+
 mongoose
-  .connect(db)
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.log(err));
+    .connect(db, { useUnifiedTopology: true })
+    .then(() => console.log('MongoDB Connected'))
+    .catch(err => console.log(err));
 
 // Passport middleware
 app.use(passport.initialize());
@@ -36,12 +56,12 @@ app.use('/api/posts', posts);
 
 // Server static assets if in production
 if (process.env.NODE_ENV === 'production') {
-  // Set static folder
-  app.use(express.static('client/build'));
+    // Set static folder
+    app.use(express.static('client/build'));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-  });
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
 }
 
 const port = process.env.PORT || 5000;
