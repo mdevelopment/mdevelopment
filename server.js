@@ -18,28 +18,8 @@ app.use(bodyParser.json());
 const db = require('./config/keys').mongoURI;
 
 // Connect to MongoDB
-
-
-
-/*var MongoClient = require('mongodb').MongoClient;
-
-//var uri = db;
-MongoClient.connect(db, { useNewUrlParser: true }, function(err, client) {
-    const collection = client.db("test").collection("devices");
-    // perform actions on the collection object
-    console.log(db);
-    // setDB(db);
-    client.close();
-});
-
-setDB = theDB => {
-    return String(theDB);
-}
-
-*/
-
 mongoose
-    .connect(db, { useUnifiedTopology: true })
+    .connect(db)
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
 
