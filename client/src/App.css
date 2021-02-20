@@ -1,29 +1,41 @@
 img {
-  width: 100%;
+    width: 100%;
 }
-body {background-color: #000000;}
+
+body {
+    background-color: #000000;
+}
 
 .htmlBase {
-  position: relative;
- 
-  background: url('./img/space.png') no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
- /* margin-top: -24px;
+    position: relative;
+    background: url('./img/space.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* margin-top: -24px;
   margin-bottom: -50px;
   */
 }
-.register, .login, .profiles, { margin-top:130px;}
 
-
-.landing { margin-top:0px;
-background-color: rgba(0,0, 0, .5) !important;
-background-image: url('http://placekitten.com/1500/1000');
-background-blend-mode: color;
+.register,
+.login,
+.profiles,
+{
+    margin-top: 130px;
 }
 
-input, textarea {  font-family:"Ariel", sans-serif; }
+.landing {
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, .5) !important;
+    background-blend-mode: color;
+}
+
+input,
+textarea {
+    font-family: "Ariel", sans-serif;
+}
+
+
 /*
 .landing-inner {
   padding-top: 80px;
@@ -37,24 +49,32 @@ input, textarea {  font-family:"Ariel", sans-serif; }
   height: 100%;
 }
 */
-p {margin:0px; padding:0px;}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
 .card-form {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 .latest-profiles-img {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .form-control::placeholder {
-  color: #bbb !important;
+    color: #bbb !important;
 }
 
-
-
-@media only screen and (max-width: 480px)
-    {
-     .register, .login, .profiles { margin-top:50px;}
-     .landing { margin-top:0px;}
-  }
+@media only screen and (max-width: 480px) {
+    .register,
+    .login,
+    .profiles {
+        margin-top: 50px;
+    }
+    .landing {
+        margin-top: 0px;
+    }
+}
