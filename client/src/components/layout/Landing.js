@@ -25,12 +25,15 @@ render() {
        </p>
 
       */}
-                <h4   style={{paddingTop:'1.5em; fone'}} >
+              
+                {/*  
+                  <h4   style={{paddingTop:'1.5em;'}} >
                   {' '}
                 Please Sign Up and Sign In<br/>to read and view creative posts. <br/>
                  Please sign the guest book by creating a profile!<br/> The profile doesn't have to be complete.
                 </h4>
-                {/*  <hr />*/}
+                
+                */}
                 <Link to="/register" className="btn mr-2 btn-lg myBtnSignUp">
                   Sign Up
                 </Link>
