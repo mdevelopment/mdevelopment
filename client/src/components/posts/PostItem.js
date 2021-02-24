@@ -41,7 +41,7 @@ class PostItem extends Component {
 
   render() {
     const { post, auth, showActions } = this.props;
-    console.log("WHAT IS THE AUTH: "+ JSON.stringify(auth));
+    //console.log("WHAT IS THE AUTH: "+ JSON.stringify(auth));
     let modalClose = () => this.setState({ modalShow: false });
     const date = this.props.post.date;
     const formattedDate = date.substring(0, Math.min(10));
@@ -63,7 +63,7 @@ class PostItem extends Component {
             style={{
               fontSize: ".7em",
               color: "white",
-              textDecoration: "underline !important",
+              textDecoration: "underline!important",
             }}
           >
             {" "}
@@ -74,7 +74,7 @@ class PostItem extends Component {
       </div>
     );
 
-    console.log("VIDEO: " + post.video);
+   // console.log("VIDEO: " + post.video);
 
     let whichModal;
 

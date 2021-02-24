@@ -19,19 +19,22 @@ render() {
 
 
       const showInstructions = (
-       <div style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
-       <p className =""><br/><br/><span style={{color:'#ADD8E6'}} >ReactJS Web App</span><br/>blog of posts of thoughts<br/>and links to programming, graphic,<br/>and musical creative.
-       <br/><i><small><span style={{color:'pink'}}>(In development)</span></small></i>
+   <div style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
+      {/*     <p className =""><br/><br/><span style={{color:'#ccf2ff'}} >ReactJS Web App</span><br/>blog of posts of thoughts<br/>and links to digital, graphic,<br/>and musical creative.  
+       <br/>
        </p>
-                <h4   style={{paddingTop:'1.5em'}} >
+
+      */}
+                <h4   style={{paddingTop:'1.5em; fone'}} >
                   {' '}
-                <b>Please Sign Up/Sign the Guest Book and/or Log in<br/>to read and view posts.</b>
+                Please Sign Up and Sign In<br/>to read and view creative posts. <br/>
+                 Please sign the guest book by creating a profile!<br/> The profile doesn't have to be complete.
                 </h4>
                 {/*  <hr />*/}
-                <Link to="/register" className="btn btn-md btn-info mr-2 btn-lg myBtnSignUp">
+                <Link to="/register" className="btn mr-2 btn-lg myBtnSignUp">
                   Sign Up
                 </Link>
-                <Link to="/login" className="btn btn-md btn-light btn-lg myBtnLogin">
+                <Link to="/login" className="btn  btn-lg myBtnLogin">
                   Log in
                 </Link>
           </div>

@@ -1,38 +1,205 @@
-
-p, h1 { font-family: 'Titillium Web', sans-serif;font-weight:300 !important; font-size:2.8em !important;color:#FFFFFF !important;margin-bottom:0px !important;opacity:.9 !important;} 
-
-h2 { line-height:1.5em !important;font-family: 'Titillium Web', sans-serif;font-weight:200 !important; font-size:2em !important;color:#e0ec1d!important;} 
-h3 { line-height:1.5em !important;font-family: 'Titillium Web', sans-serif;font-weight:200 !important; font-size:1.8em !important;color:#FFFFFF !important;}
-h4 { line-height:1.5em !important;font-family: 'Titillium Web', sans-serif;font-weight:200 !important; font-size:1.5em !important;color:#e0ec1d !important;}
-.profileName { font-family: 'Titillium Web', sans-serif;font-weight:200 !important; font-size:3em !important;color:#e0ec1d!important;} 
-
-.MySubmitBtn { background-color: #dffdae !important;border-color: #dffdae !important; color:#666666 !important; height:2.7em!important ;margin-top:0px !important; color:#666666 !important;}
-.MyBtn { background-color: #dffdae !important;border-color: #dffdae !important; color:#666666 !important;  ;margin-top:0px !important; margin-bottom:10px !important }
-.MyBtn2 { background-color: #666666!important;border-color: #666666 !important; color:#FFFFFF !important;  ;margin-top:0px !important;  }
-
-.cardSpan {font-family: 'Titillium Web', sans-serif;font-weight:300; font-size:.7em !important;color:#FFFFFF !important; }
-
-.card {/*opacity:.9;*/background: rgba(0, 0, 0, 0.2);}
-
-
-.likeBtn ,.unlikeBtn,.commentsBtn, .deleteBtn { background:#dffdae !important; border-color:#dffdae !important }
-.deleteBtn { background:#CCCCCC!important;  border-color:#CCCCCC!important; }
-.commentsBtn {padding-top:4px !important; }
-
-.modal-backdrop
-{
-    opacity:.8 !important;
+p,
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300 !important;
+    font-size: 2.8em !important;
+    color: #ccf2ff !important;
+    margin-bottom: 0px !important;
+    opacity: .9 !important;
 }
-    	
 
-@media only screen and (max-width: 480px)
-    {
-    	p,h1 { font-family: 'Titillium Web', sans-serif;font-weight:300; font-size:1.8em !important;color:#FFFFFF !important; margin-bottom:10px !important;} 
-    	h2 { line-height:1.3em !important; font-family: 'Titillium Web', sans-serif;font-weight:200 !important; font-size:1.1em !important;color:#e0ec1d !important;} 
-    	h3 { line-height:1.5em !important;font-family: 'Titillium Web', sans-serif;font-weight:200 !important; font-size:.8em !important;color:#FFFFFF !important;}
-    	h4 { line-height:2em !important;font-family: 'Titillium Web', sans-serif;font-weight:200 !important; font-size:.8em !important;color:#e0ec1d !important;}
+h2 {
+    line-height: 1.5em !important;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200 !important;
+    font-size: 2em !important;
+    color: #FFF!important;
+}
 
-    	/*
+h3 {
+    line-height: 1.5em !important;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200 !important;
+    font-size: 1.8em !important;
+    color: #FFFFFF !important;
+}
+
+h4 {
+    line-height: 1.5em !important;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200 !important;
+    font-size: 2em !important;
+    color: #ccf2ff !important;
+    margin-bottom: 6%!important;
+}
+
+.profileName {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200 !important;
+    font-size: 3em !important;
+    color: #ccf2ff!important;
+}
+
+.MyDeleteBtn {
+    height: 2.7em!important;
+    margin-top: 0px !important;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+    color: #FFF;
+    border-color: #FFF!important;
+    margin: 0 auto;
+}
+
+.MyDeleteBtn:hover {
+    color: #ccf2ff;
+    border-color: #ccf2ff!important;
+}
+
+.MySubmitBtn {
+    height: 2.7em!important;
+    margin-top: 0px !important;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+    color: #FFF;
+    border-color: #FFF!important;
+    margin: 0 auto;
+    width: 60%!important;
+    margin-top: 5%!important;
+}
+
+.MySubmitBtn:hover {
+    color: #ccf2ff;
+    border-color: #ccf2ff!important;
+}
+
+.MyBtn {
+    height: 2.7em!important;
+    margin-top: 0px !important;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+    color: #FFF;
+    border-color: #FFF!important;
+    width: 60%!important;
+    margin: auto;
+    margin-bottom: 10px !important
+}
+
+.MyBtn:hover {
+    color: #ccf2ff;
+    border-color: #ccf2ff!important;
+}
+
+.MyBtnDetail {
+    height: 2.7em!important;
+    margin-top: 0px !important;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+    color: #FFF;
+    border-color: #FFF!important;
+    width: 25%!important;
+    margin: auto;
+    margin-bottom: 10px !important
+}
+
+.MyBtnDetail:hover {
+    color: #ccf2ff;
+    border-color: #ccf2ff!important;
+}
+
+.MyBtn2 {
+    height: 2.7em!important;
+    margin-top: 0px !important;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+    color: #FFF;
+    border-color: #FFF!important;
+    width: 60%!important;
+    margin: auto;
+    margin-bottom: 10px !important
+}
+
+.MyBtn2:hover {
+    color: #ccf2ff;
+    border-color: #ccf2ff!important;
+}
+
+.MyBtn3 {
+    height: 2.7em!important;
+    margin-top: 0px !important;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+    color: #FFF;
+    border-color: #FFF!important;
+    width: 100%!important;
+    margin-bottom: 5px !important;
+    padding-top: 7%;
+    margin-top: 15% !important;
+}
+
+.MyBtn3:hover {
+    color: #ccf2ff;
+    border-color: #ccf2ff!important;
+}
+
+.cardSpan {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-size: .7em !important;
+    color: #FFFFFF !important;
+}
+
+.card {
+    /*opacity:.9;*/
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.likeBtn,
+.unlikeBtn,
+.commentsBtn,
+.deleteBtn {
+    background: #ccf2ff !important;
+    border-color: #ccf2ff !important;
+}
+
+.deleteBtn {
+    background: #CCCCCC!important;
+    border-color: #CCCCCC!important;
+}
+
+.commentsBtn {
+    padding-top: 4px !important;
+}
+
+.modal-backdrop {
+    opacity: .8 !important;
+}
+
+@media only screen and (max-width: 480px) {
+    p,
+    h1 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 300;
+        font-size: 1.8em !important;
+        color: #FFFFFF !important;
+        margin-bottom: 10px !important;
+    }
+    h2 {
+        line-height: 1.3em !important;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 200 !important;
+        font-size: 1.1em !important;
+        /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));*/
+        color: #FFF;
+        border-color: #FFF!important;
+    }
+    h3 {
+        line-height: 1.5em !important;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 200 !important;
+        font-size: .8em !important;
+        color: #FFFFFF !important;
+    }
+    h4 {
+        line-height: 1.6em !important;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 200 !important;
+        font-size: 1.1em !important;
+    }
+    /*
     	.likeBtn {  -ms-transform: scale(.5, .5); 
   				-webkit-transform: scale(.5, .5); 
   				transform: scale(.5, .5);;
@@ -41,10 +208,15 @@ h4 { line-height:1.5em !important;font-family: 'Titillium Web', sans-serif;font-
     	.commentsBtn {}
     	.deleteBtn {}
 		*/
-		.commentsBtn {height:31px !important; padding-top:4px !important; font-size:12px !important;}
-		.postImg {margin-bottom:15px}
-   
+    .commentsBtn {
+        height: 31px !important;
+        padding-top: 4px !important;
+        font-size: 12px !important;
     }
+    .postImg {
+        margin-bottom: 15px
+    }
+}
 
 
 /*

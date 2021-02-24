@@ -37,14 +37,14 @@ class Dashboard extends Component {
         dashboardContent = (
           <div >
             <p className="lead text-muted">
-             <span style={{ textDecoration: 'none', color: 'white' }}>Welcome</span> <Link style={{ textDecoration: 'none', color: '#e0ec1d', fontSize:'1em' }} to={`/profile/${profile.handle}`} >{user.name}</Link>
+             <span style={{ textDecoration: 'none', color: 'white' }}>Welcome</span> <Link style={{ textDecoration: 'none', color: '#ccf2ff', fontSize:'1em' }} to={`/profile/${profile.handle}`} >{user.name}</Link>
             </p>
             <ProfileActions />
            
             <div style={{ marginBottom: '10px' }} />
             <button
               onClick={this.onDeleteClick.bind(this)}
-              className="btn MyBtn2" style={{ color:'#FFFFFF !important' }}
+              className="btn MyDeleteBtn" 
             >
               Delete My Account
             </button>
