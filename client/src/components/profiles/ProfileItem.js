@@ -21,7 +21,7 @@ class ProfileItem extends Component {
                 <span >{profile.location}</span>
               )}
             </h2>
-            <Link to={`/profile/${profile.handle}`} className="btn  btn-lg MyBtnDetail">
+            <Link to={`/profile/${profile.handle}`} className="btn  btn-lg MyBtnDetail detailMobile" >
               Detailed Profile
             </Link>
           </div>

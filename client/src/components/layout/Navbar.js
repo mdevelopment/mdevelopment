@@ -22,14 +22,14 @@ class Navbar extends Component {
       <ul className="navbar-nav ml-auto" style={{paddingTop:'16px'}}>
         <li className="nav-item ">
           <Link className="nav-link" to="/feed"
-          style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white',}}
+          style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white'}}
           >
             Posts
           </Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/profiles"
-            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white',}}
+            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white'}}
           >
 
             Guest Book
@@ -37,12 +37,12 @@ class Navbar extends Component {
         </li>
          <li className="nav-item">
           <Link className="nav-link" to="/dashboard"
-          style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white',}}
+          style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white'}}
           >
             Your Dashboard
           </Link>
         </li>
-        <li className="nav-item" style={{ paddingRight: '12px', color:'white',}} >
+        <li className="nav-item" style={{ paddingRight: '12px', color:'white'}} >
           <a
             href=""
             onClick={this.onLogoutClick.bind(this)}

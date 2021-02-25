@@ -169,6 +169,14 @@ h4 {
 }
 
 @media only screen and (max-width: 480px) {
+    .detailMobile {
+        padding-top: 2%;
+        width: 40%!important;
+    }
+    ,
+    .MyBtnDetail {
+        width: 50%!important;
+    }
     p,
     h1 {
         font-family: 'Titillium Web', sans-serif;
