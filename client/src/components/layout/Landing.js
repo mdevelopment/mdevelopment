@@ -46,10 +46,10 @@ render() {
     return (
 
 
-      <div className="landing" style={{paddingBottom:'500px',paddingTop:'0px',  backgroundImage: `url(${Background})`,
+      <div className="landing" style={{paddingTop:'0px',  backgroundImage: `url(${Background})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            height:'100%',
+            height:'100vh',
             backgroundColor: 'rgba(0, 0, 0, 1) !important' ,
             backgroundBlendMode:'color',
             backgroundRepeat: 'no-repeat'}}>
