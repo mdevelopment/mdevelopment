@@ -177,7 +177,8 @@ class CreateProfile extends Component {
                   value={this.state.website}
                   onChange={this.onChange}
                   error={errors.website}
-                  info="Please use a complete URL with http://www. Could be your own website or a company one"
+                  info="Please use a complete URL"
+                 
                 />
                 <TextFieldGroup
                   placeholder="Location"
@@ -225,14 +226,14 @@ class CreateProfile extends Component {
                   >
                     Add Social Network Links
                   </button>
-                  <span className="" style={{color:'white', fontSize:'12px'}}> Please use a complete URL. With the http://www</span>
+                  <span className="" style={{color:'white', marginLeft:'10px', fontSize:'12px'}}> Please use a complete URL.</span>
                 </div>
                 {socialInputs}
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn btn-info btn-block mt-4 MyBtn"
-                  style={{height:'50px'}}
+                  className="btn  btn-block mt-4 MySubmitBtn"
+                  style={{height:'50px', marginTop:'10px'}}
                 />
               </form>
               <br/>
