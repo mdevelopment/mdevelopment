@@ -30,10 +30,18 @@ render() {
        
        
                 <h4   style={{paddingTop:'1.5em'}} >
-                  {' '}
-                Please Sign Up and Sign In for Posts.<br/>Cover Artwork by Erika Anderson.
+            
+                Please Sign Up and Log In.<br/>
+                <span className="Artist"   style={{paddingTop:'.2em'}} >
+               
+               Cover Artwork by Erika Anderson.
+               </span>
                 </h4>
-                {/*  <hr />*/}
+
+               
+
+
+            
                 <Link to="/register" className="btn btn-md btn-info mr-2 btn-lg myBtnSignUp">
                   Sign Up
                 </Link>
