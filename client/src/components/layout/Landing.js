@@ -19,25 +19,25 @@ render() {
 
 
       const showInstructions = (
-   <div style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
-      {/*     <p className =""><br/><br/><span style={{color:'#ccf2ff'}} >ReactJS Web App</span><br/>blog of posts of thoughts<br/>and links to digital, graphic,<br/>and musical creative.  
+       <div style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
+       
+       
+         <br/><div className="LandingHeader" >Blog of posts of mdevelopments<br/> newest links to digital, graphic,<br/>and musical creative. </div>
        <br/>
-       </p>
 
-      */}
-              
-                {/*  
-                  <h4   style={{paddingTop:'1.5em;'}} >
+        
+         
+       
+       
+                <h4   style={{paddingTop:'1.5em'}} >
                   {' '}
-                Please Sign Up and Sign In<br/>to read and view creative posts. <br/>
-                 Please sign the guest book by creating a profile!<br/> The profile doesn't have to be complete.
+                Please Sign Up and Sign In for Posts.<br/>Cover Artwork by Erika Anderson.
                 </h4>
-                
-                */}
-                <Link to="/register" className="btn mr-2 btn-lg myBtnSignUp">
+                {/*  <hr />*/}
+                <Link to="/register" className="btn btn-md btn-info mr-2 btn-lg myBtnSignUp">
                   Sign Up
                 </Link>
-                <Link to="/login" className="btn  btn-lg myBtnLogin">
+                <Link to="/login" className="btn btn-md btn-light btn-lg myBtnLogin">
                   Log in
                 </Link>
           </div>
@@ -46,10 +46,10 @@ render() {
     return (
 
 
-      <div className="landing" style={{paddingTop:'0px',  backgroundImage: `url(${Background})`,
+      <div className="landing" style={{paddingBottom:'500px',paddingTop:'0px',  backgroundImage: `url(${Background})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            height:'100vh',
+            height:'100%',
             backgroundColor: 'rgba(0, 0, 0, 1) !important' ,
             backgroundBlendMode:'color',
             backgroundRepeat: 'no-repeat'}}>
