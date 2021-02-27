@@ -54,10 +54,10 @@ render() {
     return (
 
 
-      <div className="landing" style={{paddingBottom:'500px',paddingTop:'0px',  backgroundImage: `url(${Background})`,
+      <div className="landing" style={{paddingTop:'0px',  backgroundImage: `url(${Background})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            height:'100%',
+            height:'98vh',
             backgroundColor: 'rgba(0, 0, 0, 1) !important' ,
             backgroundBlendMode:'color',
             backgroundRepeat: 'no-repeat'}}>
@@ -65,8 +65,6 @@ render() {
         <div className="">
           <div className="container  ">
             <div className="row ">
-
-                
 
               <div className="col-md-12 text-center" >
               
