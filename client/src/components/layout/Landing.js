@@ -22,7 +22,7 @@ render() {
        <div style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
        
        
-         <br/><div className="LandingHeader" >Blog of posts of mdevelopments<br/> newest links to digital, graphic,<br/>and musical creative. </div>
+         <br/><div className="LandingHeader" >Blog of posts of mdevelopments<br/> newest links to digital, graphic,<br/>and musical creative.  <br/>This is a MERN Stack ReactJS/Express website. </div>
        <br/>
 
         
