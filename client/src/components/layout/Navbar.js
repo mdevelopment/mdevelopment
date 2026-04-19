@@ -20,11 +20,11 @@ class Navbar extends Component {
     const authLinks = (
    
       <ul className="navbar-nav ml-auto" style={{paddingTop:'16px'}}>
-        <li className="nav-item ">
+        <li className="nav-item">
           <Link className="nav-link" to="/feed"
           style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white'}}
           >
-            Posts
+            Creative
           </Link>
         </li>
         <li className="nav-item">
