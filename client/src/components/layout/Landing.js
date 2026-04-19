@@ -43,7 +43,7 @@ render() {
 
             
                 <Link to="/register" className="btn btn-md btn-info mr-2 btn-lg myBtnSignUp">
-                  Sign Up
+                  Sign
                 </Link>
                 <Link to="/login" className="btn btn-md btn-light btn-lg myBtnLogin">
                   Log in
