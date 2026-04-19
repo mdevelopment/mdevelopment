@@ -5,6 +5,7 @@ import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
 import TextFieldGroup2 from "../common/TextFieldGroup2";
 import { addPost } from "../../actions/postActions";
 import adminKey from "../../config/adminKey";
+import boomboomboom from "../../img/boomboomboom.jpg";
 
 class PostForm extends Component {
   constructor(props) {
@@ -69,7 +70,7 @@ class PostForm extends Component {
       authPrivelidges = (
         <div>
           {" "}
-          <h3> YOU 'VE GOT AUTH PRIVLIDGES</h3>
+          <h3> YOU'VE GOT AUTH PRIVLIDGES</h3>
           <div className="post-form mb-0">
         <div
           className="card card-body bg-dark mb-0 border-0"
