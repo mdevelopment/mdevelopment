@@ -150,7 +150,7 @@ class PostItem extends Component {
                     </span>{" "}
                   </button>
 
-                  <button
+                  {/* <button
                     style={{
                       paddingTop: "4px",
                       paddingBottom: "4px",
@@ -165,7 +165,7 @@ class PostItem extends Component {
                       className="fas fa-thumbs-down"
                       style={{ position: "relative", top: "2px" }}
                     />{" "}
-                  </button>
+                  </button> */}
                   {/* 
                       <Link
                     to={`/post/${post._id}`}
