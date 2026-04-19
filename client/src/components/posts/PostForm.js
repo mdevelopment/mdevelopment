@@ -98,7 +98,7 @@ class PostForm extends Component {
                   value={this.state.video}
                   onChange={this.onChange}
                 />{" "}
-                     <div style={{ color: "#fff", fontSize: "1.2em", marginTop: "4px" }}>
+                     <div style={{ color: "#fff", fontSize: "1.2em", marginTop: "1px" }}>
                   Note: for video loading in modal use YouTube URLS
                 </div>
                 <TextFieldGroup2
@@ -119,7 +119,7 @@ class PostForm extends Component {
                   value={this.state.image}
                   onChange={this.onChange}
                 />{" "}
-                <div style={{ color: "#fff", fontSize: "1.2em", marginTop: "4px" }}>
+                <div style={{ color: "#fff", fontSize: "1.2em", marginTop: "1px" }}>
                   Note: for image load from mdevelopment server with url
                 </div>
                 
