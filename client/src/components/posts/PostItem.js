@@ -9,7 +9,7 @@ import MyVerticallyCenteredModalSong from "../common/MyVerticallyCenteredModalSo
 import MyVerticallyCenteredModalVideo from "../common/MyVerticallyCenteredModalVideo";
 import "../../MyFonts.css";
 //import formatDate from '../../utils/formatDate';
-import mimg from '../../img/boomboomboom.jpg'
+//import mimg from '../../img/boomboomboom.jpg'
 
 class PostItem extends Component {
   constructor(...props) {
@@ -118,7 +118,7 @@ class PostItem extends Component {
             className="col-md-3"
             onClick={() => this.setState({ modalShow: true })}
           >
-            <img className="postImg" src={post.image || mimg} alt="" />
+            <img className="postImg" src={post.image} alt="" />
             <br /> {/* <p className="text-center">{post.name}</p>*/}{" "}
           </div>
           {whichModal}{" "}
