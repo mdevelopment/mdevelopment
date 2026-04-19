@@ -99,7 +99,7 @@ class PostForm extends Component {
                   onChange={this.onChange}
                   style={{ marginBottom: "15px" }}
                 />{" "}
-                     <div style={{ color: "#fff", fontSize: "1.2em", marginTop: "1px" }}>
+                     <div style={{ color: "#fff", fontSize: "1.2em", marginTop: "0px", marginBottom:"15px" }}>
                   Note: for video loading in modal use YouTube URLS
                 </div>
                 <TextFieldGroup2
