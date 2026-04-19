@@ -22,7 +22,7 @@ render() {
        <div style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
        
        
-         <br/><div className="LandingHeader" >Blog of posts of mdevelopment's<br/>links to digital, graphic,<br/>and musical and developent creative.  <br/>This is a MERN Stack website. </div>
+         <br/><div className="LandingHeader" >Blog of posts of mdevelopment's<br/>links to digital, graphic,<br/>and musical and developent creative.  <br/>A ReactJS MERN stack using REDUX. 2026</div>
        <br/>
 
         
@@ -31,7 +31,7 @@ render() {
        
                 <h4   style={{paddingTop:'1.5em'}} >
             
-                Please Sign Up and Log In.<br/>
+                Please sign the guestbook. And view creative works.<br/>
                 <span className="Artist"   style={{paddingTop:'.2em'}} >
                
                Cover Artwork by Erika Anderson.
