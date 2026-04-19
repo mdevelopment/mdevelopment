@@ -97,7 +97,7 @@ class PostForm extends Component {
                   name="video"
                   value={this.state.video}
                   onChange={this.onChange}
-                  style={{ marginBottom: "1px" }}
+                  style={{ marginBottom: "15px" }}
                 />{" "}
                      <div style={{ color: "#fff", fontSize: "1.2em", marginTop: "1px" }}>
                   Note: for video loading in modal use YouTube URLS
