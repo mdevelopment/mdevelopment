@@ -97,6 +97,7 @@ class PostForm extends Component {
                   name="video"
                   value={this.state.video}
                   onChange={this.onChange}
+                  style={{ marginBottom: "1px" }}
                 />{" "}
                      <div style={{ color: "#fff", fontSize: "1.2em", marginTop: "1px" }}>
                   Note: for video loading in modal use YouTube URLS
@@ -118,6 +119,7 @@ class PostForm extends Component {
                   name="image"
                   value={this.state.image}
                   onChange={this.onChange}
+                  style={{ marginBottom: "1px" }}
                 />{" "}
                 <div style={{ color: "#fff", fontSize: "1.2em", marginTop: "1px" }}>
                   Note: for image load from mdevelopment server with url
