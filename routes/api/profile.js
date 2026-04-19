@@ -289,6 +289,28 @@ router.delete(
 );
 */
 
+// @route   DELETE api/profile/admin/:user_id
+// @desc    Admin: delete any guest profile and user account
+// @access  Private (admin only)
+const ADMIN_USER_ID = process.env.ADMIN_USER_ID || '69e43ba6250b100014be5741';
+
+router.delete(
+  '/admin/:user_id',
+  passport.authenticate('jwt', { session: false }),
+  (req, res) => {
+    if (req.user.id !== ADMIN_USER_ID) {
+      return res.status(401).json({ notauthorized: 'Not authorized' });
+    }
+    Profile.findOneAndRemove({ user: req.params.user_id })
+      .then(() => {
+        User.findOneAndRemove({ _id: req.params.user_id }).then(() =>
+          res.json({ success: true })
+        );
+      })
+      .catch(err => res.status(404).json({ profilenotfound: 'Profile not found' }));
+  }
+);
+
 // @route   DELETE api/profile
 // @desc    Delete user and profile
 // @access  Private

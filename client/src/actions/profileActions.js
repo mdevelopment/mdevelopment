@@ -5,6 +5,7 @@ import {
   GET_PROFILES,
   PROFILE_LOADING,
   CLEAR_CURRENT_PROFILE,
+  DELETE_PROFILE,
   GET_ERRORS,
   SET_CURRENT_USER
 } from './types';
@@ -173,4 +174,22 @@ export const clearCurrentProfile = () => {
   return {
     type: CLEAR_CURRENT_PROFILE
   };
+};
+
+// Admin: delete any guest profile + user account
+export const deleteProfile = userId => dispatch => {
+  axios
+    .delete(`/api/profile/admin/${userId}`)
+    .then(res =>
+      dispatch({
+        type: DELETE_PROFILE,
+        payload: userId
+      })
+    )
+    .catch(err =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      })
+    );
 };
