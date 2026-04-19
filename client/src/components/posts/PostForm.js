@@ -116,9 +116,9 @@ class PostForm extends Component {
                   value={this.state.image}
                   onChange={this.onChange}
                 />{" "}
-                <p style={{ color: "white", fontSize: "10px", marginTop: "4px" }}>
+                <div style={{ color: "#fff", fontSize: ".5em", marginTop: "4px" }}>
                   Note: for image load from mdevelopment server with url
-                </p>
+                </div>
                 
               </div>
               <button type="submit" className="btn btn-light">

@@ -2,3 +2,8 @@
 package-lock.json
 /config/keys_dev.js
 /client/src/config/adminKey.js
+*.tar.gz
+source_info.json
+build_response.json
+poll_build.py
+poll_build_v2.py
