@@ -13,6 +13,9 @@ const Profile = require('../../models/Profile');
 // Load User Model
 const User = require('../../models/User');
 
+// Escape user-provided handle text before building a case-insensitive regex.
+const escapeRegex = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
 // @route   GET api/profile/test
 // @desc    Tests profile route
 // @access  Public
@@ -65,13 +68,14 @@ router.get('/all', (req, res) => {
 
 router.get('/handle/:handle', (req, res) => {
   const errors = {};
+  const escapedHandle = escapeRegex(req.params.handle);
 
-  Profile.findOne({ handle: req.params.handle })
+  Profile.findOne({ handle: new RegExp(`^${escapedHandle}$`, 'i') })
     .populate('user', ['name', 'avatar'])
     .then(profile => {
       if (!profile) {
         errors.noprofile = 'There is no profile for this user';
-        res.status(404).json(errors);
+        return res.status(404).json(errors);
       }
 
       res.json(profile);
@@ -91,7 +95,7 @@ router.get('/user/:user_id', (req, res) => {
     .then(profile => {
       if (!profile) {
         errors.noprofile = 'There is no profile for this user';
-        res.status(404).json(errors);
+        return res.status(404).json(errors);
       }
 
       res.json(profile);
@@ -153,10 +157,11 @@ router.post(
         // Create
 
         // Check if handle exists
-        Profile.findOne({ handle: profileFields.handle }).then(profile => {
+        const escapedHandle = escapeRegex(profileFields.handle);
+        Profile.findOne({ handle: new RegExp(`^${escapedHandle}$`, 'i') }).then(profile => {
           if (profile) {
             errors.handle = 'That handle already exists';
-            res.status(400).json(errors);
+            return res.status(400).json(errors);
           }
 
           // Save Profile

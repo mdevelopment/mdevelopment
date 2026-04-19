@@ -51,6 +51,23 @@ render() {
           </div>
       )
 
+      const showAuthenticatedLanding = (
+        <div style={{ marginTop: '1.2em', marginBottom: '1.2em' }}>
+          <br />
+          <div className="LandingHeader">Welcome back, {this.props.auth.user.name}.</div>
+          <br />
+          <h4 style={{ paddingTop: '1.5em' }}>
+            Use the links below to continue.
+          </h4>
+          <Link to="/dashboard" className="btn btn-md btn-info mr-2 btn-lg myBtnSignUp">
+            Dashboard
+          </Link>
+          <Link to="/profiles" className="btn btn-md btn-light btn-lg myBtnLogin">
+            Guest Book
+          </Link>
+        </div>
+      );
+
     return (
 
 
@@ -68,7 +85,7 @@ render() {
 
               <div className="col-md-12 text-center" >
               
-                { this.props.auth.isAuthenticated ? <div style={{paddingTop:'500px', paddingBottom:'500px',color:'pink'}}></div> : showInstructions }
+                { this.props.auth.isAuthenticated ? showAuthenticatedLanding : showInstructions }
                 {/*console.log("IS IT AUTHED?: "+this.props.auth.isAuthenticated)*/}
               </div>
 

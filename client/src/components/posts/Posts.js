@@ -18,6 +18,15 @@ class Posts extends Component {
 
     if (posts === null || loading) {
       postContent = <Spinner />;
+    } else if (posts.length === 0) {
+      postContent = (
+        <div className="card card-body bg-dark text-light border-0 mb-3">
+          <h3 className="mb-2">Posts</h3>
+          <p className="mb-0">
+            No posts are available right now. New posts will appear here.
+          </p>
+        </div>
+      );
     } else {
       postContent = <PostFeed posts={posts} />;
     }

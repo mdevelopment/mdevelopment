@@ -4,7 +4,7 @@
   "description": "MDEVELOPMENT.COM Technology and Art Blog",
   "main": "server.js",
   "engines": {
-    "node": "20.x"
+    "node": "16.x"
   },
   "scripts": {
     "client-install": "npm install --prefix client",
