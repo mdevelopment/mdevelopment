@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
-import AudioPlayer from 'react-h5-audio-player';
+import AudioPlayer from 'react-h5-audio-player/lib/index';
 import 'react-h5-audio-player/lib/styles.css';
 import '../../Landing.css';
 import Background from '../common/Manim2.gif';
