@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 import '../../Landing.css';
 import Background from '../common/Manim2.gif';
 
@@ -15,6 +17,8 @@ class Landing extends Component {
 
  
 render() {
+
+  const landingTrack = 'https://mdevelopment.com/mdevelopment%20-%20Ice%20Cream%20Space%20Mystery.mp3';
 
 
 
@@ -74,6 +78,23 @@ render() {
 
             </div>
           </div>
+        </div>
+        <div
+          style={{
+            position: 'fixed',
+            left: '20px',
+            bottom: '20px',
+            width: 'min(360px, calc(100vw - 40px))',
+            zIndex: 1000
+          }}
+        >
+          <AudioPlayer
+            src={landingTrack}
+            autoPlay={false}
+            showJumpControls={false}
+            customAdditionalControls={[]}
+            customVolumeControls={[]}
+          />
         </div>
       </div>
     );
