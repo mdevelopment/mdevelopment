@@ -42,12 +42,12 @@ class Navbar extends Component {
             Your Dashboard
           </Link>
         </li>
-        <li className="nav-item" style={{ paddingRight: '12px', color:'white'}} >
+        <li className="nav-item" style={{ color:'white'}} >
           <button
             type="button"
             onClick={this.onLogoutClick.bind(this)}
-            className="nav-link btn btn-link p-0"
-            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none', color:'white'}}
+            className="nav-link"
+            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none', color:'white', background:'none', border:'none', cursor:'pointer'}}
           >
             Logout
           </button>
