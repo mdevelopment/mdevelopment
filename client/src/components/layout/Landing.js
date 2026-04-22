@@ -80,7 +80,7 @@ render() {
         <div
           style={{
             position: 'fixed',
-            left: '30px',
+            left: '40px',
             bottom: '20px',
             width: 'min(360px, calc(100vw - 40px))',
             zIndex: 2000,
