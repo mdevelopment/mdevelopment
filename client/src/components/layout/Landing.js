@@ -92,7 +92,7 @@ render() {
           }}
         >
           <div style={{color: '#fff', fontSize: '0.9rem', marginBottom: '8px', textAlign: 'left'}}>
-            Play: Ice Cream Space Mystery
+            Play: Ice Cream Space Mystery - by mdevelopment
           </div>
           <audio
             controls
