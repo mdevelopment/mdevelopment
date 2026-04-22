@@ -36,7 +36,7 @@ render() {
                 Please sign the guestbook. And view creative works.<br/>
                 <span className="Artist"   style={{paddingTop:'.2em'}} >
                
-               Cover Artwork by Erika Anderson.
+               Cover animation by <a href="https://ericaofanderson.tumblr.com/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline'}}>Erika Anderson</a>.
                </span>
                 </h4>
 
