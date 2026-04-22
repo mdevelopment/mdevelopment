@@ -17,6 +17,13 @@ background: rgb(47,47,47);  Old browsers */
     color: yellow;
 }
 
+@media only screen and (min-width: 769px) {
+    .navDesktopAlign {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
 @media only screen and (max-width: 768px) {}
 
 @media only screen and (max-width: 480px) {

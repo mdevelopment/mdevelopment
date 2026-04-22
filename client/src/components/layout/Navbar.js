@@ -14,7 +14,7 @@ class Navbar extends Component {
   }
 
   render() {
-    const { isAuthenticated, user } = this.props.auth;
+    const { isAuthenticated } = this.props.auth;
 
 
     const authLinks = (
@@ -49,13 +49,6 @@ class Navbar extends Component {
             className="nav-link btn btn-link p-0"
             style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none', color:'white'}}
           >
-            <img
-              className="rounded-circle"
-              src={user.avatar}
-              alt={user.name}
-              style={{fontSize:'1em', width: '25px', marginRight: '2px', color:'white',}}
-              title="You must have a Gravatar connected to your email to display an image"
-            />{' '}
             Logout
           </button>
         </li>
@@ -96,10 +89,10 @@ class Navbar extends Component {
 
     return (
       <nav className="navbar navbar-expand-sm navbar-dark mb-3 sticky-top myNavStyle" >
-        <div className="container">
+        <div className="container-fluid navDesktopAlign">
           <Link className="navbar-brand" to="/">
             <img
-            style={{ width: '350px', marginLeft: '9px', marginTop:'0px'}}
+            style={{ width: '350px', marginLeft: '0px', marginTop:'0px'}}
             alt="logo"
               src={logo}
               className="logoM"
