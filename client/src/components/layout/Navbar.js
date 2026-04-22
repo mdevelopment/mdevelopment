@@ -43,11 +43,11 @@ class Navbar extends Component {
           </Link>
         </li>
         <li className="nav-item" style={{ paddingRight: '12px', color:'white'}} >
-          <a
-            href=""
+          <button
+            type="button"
             onClick={this.onLogoutClick.bind(this)}
-            className="nav-link"
-            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none'}}
+            className="nav-link btn btn-link p-0"
+            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none', color:'white'}}
           >
             <img
               className="rounded-circle"
@@ -57,7 +57,7 @@ class Navbar extends Component {
               title="You must have a Gravatar connected to your email to display an image"
             />{' '}
             Logout
-          </a>
+          </button>
         </li>
       </ul>
     

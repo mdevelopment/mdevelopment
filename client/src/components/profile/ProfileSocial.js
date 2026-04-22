@@ -72,11 +72,11 @@ class ProfileSocial extends Component {
 
         <p className="mb-4">Social Networks</p>
         <div style={{marginTop:'0px'}}>
-        <h2>Twitter:  <a target="_blank" href= {twitterLink} style={{color:'white'}}><span className="respBR">{twitterLink}</span></a> </h2><br/>
-        <h2>FaceBook: <a target="_blank" href= {facebookLink} style={{color:'white'}}><span className="respBR">{facebookLink}</span></a> </h2><br/>
-        <h2>LinkedIn: <a target="_blank" href= {linkedinLink} style={{color:'white'}}><span className="respBR">{linkedinLink}</span></a> </h2><br/> 
-        <h2>YouTube Channel: <a target="_blank" href= {youtubeLink} style={{color:'white'}}><span className="respBR">{youtubeLink}</span></a>  </h2><br/>
-        <h2>Instagram: <a target="_blank" href= {instagramLink} style={{color:'white'}}><span className="respBR">{instagramLink}</span></a> </h2> <br/> 
+        <h2>Twitter:  <a target="_blank" rel="noopener noreferrer" href= {twitterLink} style={{color:'white'}}><span className="respBR">{twitterLink}</span></a> </h2><br/>
+        <h2>FaceBook: <a target="_blank" rel="noopener noreferrer" href= {facebookLink} style={{color:'white'}}><span className="respBR">{facebookLink}</span></a> </h2><br/>
+        <h2>LinkedIn: <a target="_blank" rel="noopener noreferrer" href= {linkedinLink} style={{color:'white'}}><span className="respBR">{linkedinLink}</span></a> </h2><br/> 
+        <h2>YouTube Channel: <a target="_blank" rel="noopener noreferrer" href= {youtubeLink} style={{color:'white'}}><span className="respBR">{youtubeLink}</span></a>  </h2><br/>
+        <h2>Instagram: <a target="_blank" rel="noopener noreferrer" href= {instagramLink} style={{color:'white'}}><span className="respBR">{instagramLink}</span></a> </h2> <br/> 
         </div>
     </div>
       )

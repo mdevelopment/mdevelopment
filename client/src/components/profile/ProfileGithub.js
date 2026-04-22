@@ -43,14 +43,13 @@ class ProfileGithub extends Component {
         <div className="row">
           <div className="col-md-12">
             <h4>
-              <a target="_blank" href={repo.html_url}  style={{color:'#e0ec1d', fontSize:'1.4em'}}>
+              <a target="_blank" rel="noopener noreferrer" href={repo.html_url}  style={{color:'#e0ec1d', fontSize:'1.4em'}}>
                 {repo.name}
               </a>
             </h4>
             <h3>{repo.description}</h3>
           </div>
         </div>
-         {console.log("REPO URLS: "+ repo.html_url)}
       </div>
     ));
     return (

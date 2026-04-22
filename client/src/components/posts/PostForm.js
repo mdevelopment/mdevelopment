@@ -5,7 +5,6 @@ import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
 import TextFieldGroup2 from "../common/TextFieldGroup2";
 import { addPost } from "../../actions/postActions";
 import adminKey from "../../config/adminKey";
-import boomboomboom from "../../img/boomboomboom.jpg";
 
 class PostForm extends Component {
   constructor(props) {

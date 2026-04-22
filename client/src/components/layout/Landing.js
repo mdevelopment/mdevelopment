@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
-import AudioPlayer from 'react-h5-audio-player/lib/index';
-import 'react-h5-audio-player/lib/styles.css';
 import '../../Landing.css';
 import Background from '../common/Manim2.gif';
 
@@ -82,19 +80,28 @@ render() {
         <div
           style={{
             position: 'fixed',
-            left: '20px',
+            left: 'max(24px, calc((100vw - 1140px) / 2 + 24px))',
             bottom: '20px',
-            width: 'min(360px, calc(100vw - 40px))',
-            zIndex: 1000
+            width: 'min(360px, calc(100vw - 48px))',
+            zIndex: 2000,
+            padding: '12px 14px',
+            borderRadius: '12px',
+            backgroundColor: 'rgba(0, 0, 0, 0.78)',
+            border: '1px solid rgba(255, 255, 255, 0.2)',
+            boxShadow: '0 16px 40px rgba(0, 0, 0, 0.35)'
           }}
         >
-          <AudioPlayer
+          <div style={{color: '#fff', fontSize: '0.9rem', marginBottom: '8px', textAlign: 'left'}}>
+            Play: Ice Cream Space Mystery
+          </div>
+          <audio
+            controls
+            preload="none"
+            style={{display: 'block', width: '100%'}}
             src={landingTrack}
-            autoPlay={false}
-            showJumpControls={false}
-            customAdditionalControls={[]}
-            customVolumeControls={[]}
-          />
+          >
+            Your browser does not support the audio element.
+          </audio>
         </div>
       </div>
     );

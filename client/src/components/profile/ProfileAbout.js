@@ -24,7 +24,7 @@ class ProfileAbout extends Component {
               ) : (
          <div>
                 <h3>{profile.bio}</h3>
-                  <h4><a target="_blank" href= {profile.website} style={{color:'white'}}><span className="respBR">{profile.website}</span></a> </h4><br/>
+                  <h4><a target="_blank" rel="noopener noreferrer" href= {profile.website} style={{color:'white'}}><span className="respBR">{profile.website}</span></a> </h4><br/>
              
              </div>
 
