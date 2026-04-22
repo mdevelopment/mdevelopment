@@ -80,7 +80,7 @@ render() {
         <div
           style={{
             position: 'fixed',
-            left: 'max(24px, calc((100vw - 1140px) / 2 + 24px))',
+            left: 'max(24px, calc((100vw - 1120px) / 2 + 24px))',
             bottom: '20px',
             width: 'min(360px, calc(100vw - 48px))',
             zIndex: 2000,
@@ -88,7 +88,7 @@ render() {
             borderRadius: '12px',
             backgroundColor: 'rgba(0, 0, 0, 0.78)',
             border: '1px solid rgba(255, 255, 255, 0.2)',
-            boxShadow: '0 16px 40px rgba(0, 0, 0, 0.35)'
+            boxShadow: '0 16px 20px rgba(0, 0, 0, 0.35)'
           }}
         >
           <div style={{color: '#fff', fontSize: '0.9rem', marginBottom: '8px', textAlign: 'left'}}>
