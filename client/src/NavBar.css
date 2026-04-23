@@ -13,8 +13,27 @@ background: rgb(47,47,47);  Old browsers */
     outline: 0 !important
 }
 
-.nav-link:hover {
-    color: yellow;
+:root {
+    --nav-accent-green-yellow: #d4e157;
+}
+
+.navbar-dark .navbar-nav .nav-link.navMenuLink,
+.navbar-dark .navbar-nav .nav-link.navMenuButton {
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link.navMenuLink:hover,
+.navbar-dark .navbar-nav .nav-link.navMenuButton:hover,
+.navbar-dark .navbar-nav .nav-link.navMenuLink:focus,
+.navbar-dark .navbar-nav .nav-link.navMenuButton:focus {
+    color: var(--nav-accent-green-yellow) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.navMenuLink.active,
+.navbar-dark .navbar-nav .nav-link.navMenuLink.navMenuLinkActive {
+    color: var(--nav-accent-green-yellow) !important;
 }
 
 @media only screen and (min-width: 769px) {

@@ -36,7 +36,7 @@ render() {
                 Please sign the guestbook. And view creative works.<br/>
                 <span className="Artist"   style={{paddingTop:'.2em'}} >
                
-               Cover animation by <a href="https://ericaofanderson.tumblr.com/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline', textDecorationThickness: '1px', textUnderlineOffset: '2px'}}>Erika Anderson</a>.
+               Cover animation by <a href="https://www.beeple-crap.com/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline', textDecorationThickness: '1px', textUnderlineOffset: '2px'}}>mike winkelman</a>.
                </span>
                 </h4>
 
@@ -61,25 +61,22 @@ render() {
             overflow: 'hidden',
             paddingTop: '0px',
             height: '100vh',
-            minHeight: '100vh',
             backgroundColor: '#000'
           }}>
         <video
+          className="landingVideoFadeIn"
           autoPlay
           muted
           loop
           playsInline
           preload="metadata"
           style={{
-            position: 'fixed',
+            position: 'absolute',
             inset: 0,
-            width: '100vw',
-            height: '100vh',
+            width: '100%',
+            height: '100%',
             objectFit: 'cover',
-            transform: 'scale(1.12)',
-            transformOrigin: 'center center',
-            zIndex: 0,
-            pointerEvents: 'none'
+            zIndex: 0
           }}
         >
           <source src={landingVideo} type="video/mp4" />

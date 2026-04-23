@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
@@ -21,33 +21,36 @@ class Navbar extends Component {
    
       <ul className="navbar-nav ml-auto" style={{paddingTop:'16px'}}>
         <li className="nav-item">
-          <Link className="nav-link" to="/feed"
-          style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white'}}
+          <NavLink className="nav-link navMenuLink" to="/feed" exact
+          activeClassName="navMenuLinkActive"
+          style={{fontSize:'1em',paddingLeft:'15px'}}
           >
             Creative
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/profiles"
-            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white'}}
+          <NavLink className="nav-link navMenuLink" to="/profiles" exact
+            activeClassName="navMenuLinkActive"
+            style={{fontSize:'1em',paddingLeft:'15px'}}
           >
 
             Guest Book
-          </Link>
+          </NavLink>
         </li>
          <li className="nav-item">
-          <Link className="nav-link" to="/dashboard"
-          style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none',color:'white'}}
+          <NavLink className="nav-link navMenuLink" to="/dashboard" exact
+          activeClassName="navMenuLinkActive"
+          style={{fontSize:'1em',paddingLeft:'15px'}}
           >
             Your Dashboard
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item" style={{ color:'white'}} >
           <button
             type="button"
             onClick={this.onLogoutClick.bind(this)}
-            className="nav-link"
-            style={{fontSize:'1em',paddingLeft:'15px', textDecoration: 'none', color:'white', background:'none', border:'none', cursor:'pointer'}}
+            className="nav-link navMenuButton"
+            style={{fontSize:'1em',paddingLeft:'15px', background:'none', border:'none', cursor:'pointer'}}
           >
             Logout
           </button>
@@ -61,26 +64,29 @@ class Navbar extends Component {
       style={{ paddingTop:'12px', paddingLeft:'2px' }}
       >
       <li className="nav-item">
-                <Link className="nav-link" to="/profiles"
-               style={{fontSize:'1em',paddingLeft:'15px', color:'white', textDecoration: 'none'}}
+                <NavLink className="nav-link navMenuLink" to="/profiles" exact
+               activeClassName="navMenuLinkActive"
+               style={{fontSize:'1em',paddingLeft:'15px'}}
                 >
                   {' '}
                   Guest Book
-                </Link>
+                </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/register"
-          style={{fontSize:'1em', paddingLeft:'15px',color:'white',  textDecoration: 'none'}}
+          <NavLink className="nav-link navMenuLink" to="/register" exact
+          activeClassName="navMenuLinkActive"
+          style={{fontSize:'1em', paddingLeft:'15px'}}
           >
             Sign Up
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/login"
-          style={{fontSize:'1em',paddingLeft:'15px',color:'white', textDecoration: 'none'}}
+          <NavLink className="nav-link navMenuLink" to="/login" exact
+          activeClassName="navMenuLinkActive"
+          style={{fontSize:'1em',paddingLeft:'15px'}}
           >
             Login
-          </Link>
+          </NavLink>
         </li>
        
 
