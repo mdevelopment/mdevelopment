@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import '../../Landing.css';
-import Background from '../common/Manim2.gif';
 
 
 
@@ -17,6 +16,7 @@ class Landing extends Component {
 render() {
 
   const landingTrack = 'https://mdevelopment.com/mdevelopment%20-%20Ice%20Cream%20Space%20Mystery.mp3';
+  const landingVideo = 'https://mdevelopment.com/dirty_ribbon_(loop)_v1%20(1080p)_2.mp4';
 
 
 
@@ -56,15 +56,40 @@ render() {
     return (
 
 
-      <div className="landing" style={{paddingTop:'0px',  backgroundImage: `url(${Background})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            height:'98vh',
-            backgroundColor: 'rgba(0, 0, 0, 1) !important' ,
-            backgroundBlendMode:'color',
-            backgroundRepeat: 'no-repeat'}}>
+      <div className="landing" style={{
+            position: 'relative',
+            overflow: 'hidden',
+            paddingTop: '0px',
+            height: '100vh',
+            backgroundColor: '#000'
+          }}>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: 0
+          }}
+        >
+          <source src={landingVideo} type="video/mp4" />
+        </video>
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.35)',
+            zIndex: 1
+          }}
+        />
         {/* <div className="dark-overlay landing-inner text-light">*/}
-        <div className="">
+        <div className="" style={{position: 'relative', zIndex: 2}}>
           <div className="container  ">
             <div className="row ">
 
@@ -77,6 +102,18 @@ render() {
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+        
         <div
           style={{
             position: 'fixed',
