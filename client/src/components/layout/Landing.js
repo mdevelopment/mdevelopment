@@ -134,7 +134,7 @@ render() {
             boxShadow: '0 16px 20px rgba(0, 0, 0, 0.35)'
           }}
         >
-          <div style={{color: '#fff', fontSize: '0.9rem', marginBottom: '8px', textAlign: 'left'}}>
+          <div className="landingAudioTitle" style={{color: '#fff', fontSize: '0.9rem', marginBottom: '8px', textAlign: 'left'}}>
             Play: Ice Cream Space Mystery - by mdevelopment
           </div>
           <audio
