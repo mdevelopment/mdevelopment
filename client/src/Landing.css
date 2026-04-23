@@ -44,6 +44,16 @@
     background-color: rgba(100, 0, 0, 0.0);
 }
 
+.landingInstructions {
+    position: fixed;
+    top: 108px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(760px, calc(100vw - 48px));
+    margin: 0 !important;
+    z-index: 2100;
+}
+
 .landingVideoFadeIn {
     opacity: 0;
     animation: landingVideoFadeIn 4s ease forwards;
@@ -100,12 +110,13 @@
         width: min(330px, calc(100vw - 24px)) !important;
         margin: 0 !important;
         padding: 8px 10px !important;
-        background-color: rgba(255, 255, 255, 0.96) !important;
-        border: 1px solid rgba(0, 0, 0, 0.18) !important;
+        background-color: rgba(0, 0, 0, 0.78) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.35) !important;
     }
 
     .landingAudioTitle {
-        color: #111 !important;
+        color: #fff !important;
         font-size: 0.74rem !important;
         margin-bottom: 4px !important;
         line-height: 1.1 !important;
@@ -118,7 +129,7 @@
         display: block !important;
         width: 100% !important;
         height: 34px !important;
-        background-color: #fff !important;
+        background-color: transparent !important;
         border-radius: 8px !important;
     }
 
@@ -135,7 +146,11 @@
 
     .landingFooterCredit {
         bottom: 42px !important;
-        font-size: 0.74rem !important;
+        font-size: 0.82rem !important;
+    }
+
+    .landingFooterCredit a {
+        font-size: 1em !important;
     }
 
     .landingFooterTagline {
