@@ -18,7 +18,7 @@ class ProfileItem extends Component {
 
     return (
       <div>
-        <div className="card card-body mb-3" style={{ backgroundColor: 'rgba(0, 61, 115, .6)' }}>
+        <div className="card card-body mb-3 guestBookProfileCard">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-12 text-center">
               <p>{profile.user.name}</p>

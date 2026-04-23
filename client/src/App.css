@@ -59,6 +59,15 @@ p {
     opacity: 0.9;
 }
 
+.guestBookProfileCard {
+    background-color: rgba(0, 61, 115, 0.6) !important;
+    transition: background-color 0.28s ease;
+}
+
+.guestBookProfileCard:hover {
+    background-color: rgba(212, 225, 87, 0.72) !important;
+}
+
 .latest-profiles-img {
     width: 40px;
     height: 40px;
