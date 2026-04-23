@@ -67,4 +67,12 @@
     .LandingHeader {
         font-size: 1.8em !important;
     }
+
+    .landingAudioPlayer {
+        left: 50% !important;
+        right: auto !important;
+        bottom: 69px !important;
+        transform: translateX(-50%);
+        width: min(360px, calc(100vw - 24px)) !important;
+    }
 }

@@ -25,15 +25,14 @@ render() {
        
        
          <br/><div className="LandingHeader" >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</div>
-       <br/>
 
         
          
        
        
-                <h4   style={{paddingTop:'1.5em'}} >
+                <h4   style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
             
-                Please sign the guestbook. And view creative works.<br/>
+                Please sign the guestbook. And view creative works.
                 </h4>
 
                
@@ -121,6 +120,7 @@ render() {
 
         
         <div
+          className="landingAudioPlayer"
           style={{
             position: 'fixed',
             left: '40px',
