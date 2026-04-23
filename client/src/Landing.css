@@ -66,8 +66,16 @@
     }
 
     .landingInstructions {
+        position: fixed !important;
+        top: 74px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: calc(100vw - 24px) !important;
+        max-width: 460px !important;
+        margin: 0 !important;
         padding-left: 20px;
         padding-right: 20px;
+        z-index: 2100 !important;
     }
 
     .landingInstructions br {
@@ -87,21 +95,29 @@
         position: fixed !important;
         left: 50% !important;
         right: auto !important;
-        bottom: 72px !important;
+        bottom: clamp(200px, 24vh, 230px) !important;
         transform: translateX(-50%) !important;
-        width: min(360px, calc(100vw - 24px)) !important;
+        width: min(330px, calc(100vw - 24px)) !important;
         margin: 0 !important;
+        padding: 8px 10px !important;
         background-color: rgba(255, 255, 255, 0.96) !important;
         border: 1px solid rgba(0, 0, 0, 0.18) !important;
     }
 
     .landingAudioTitle {
         color: #111 !important;
+        font-size: 0.74rem !important;
+        margin-bottom: 4px !important;
+        line-height: 1.1 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
 
     .landingAudioPlayer audio {
         display: block !important;
         width: 100% !important;
+        height: 34px !important;
         background-color: #fff !important;
         border-radius: 8px !important;
     }
