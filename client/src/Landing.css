@@ -59,6 +59,21 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .landing {
+        height: auto !important;
+        min-height: 100vh !important;
+        overflow: visible !important;
+    }
+
+    .landingInstructions {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .landingInstructions br {
+        display: none;
+    }
+
     p {
         font-family: 'Titillium Web', sans-serif;
         font-weight: 200;
@@ -69,10 +84,27 @@
     }
 
     .landingAudioPlayer {
-        left: 50% !important;
+        position: static !important;
+        left: auto !important;
         right: auto !important;
-        bottom: calc(50% - 100px) !important;
-        transform: translateX(-50%);
+        bottom: auto !important;
+        transform: none !important;
         width: min(360px, calc(100vw - 24px)) !important;
+        margin: 100px auto 14px !important;
+    }
+
+    .landingFooterCredit,
+    .landingFooterTagline {
+        position: static !important;
+        left: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        width: calc(100vw - 24px) !important;
+        margin: 0 auto 10px !important;
+        text-align: center !important;
+    }
+
+    .landingFooterTagline {
+        margin-bottom: 20px !important;
     }
 }

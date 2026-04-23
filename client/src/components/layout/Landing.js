@@ -21,7 +21,7 @@ render() {
 
 
       const showInstructions = (
-       <div style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
+       <div className="landingInstructions" style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
        
        
          <br/><div className="LandingHeader" >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</div>
@@ -148,6 +148,7 @@ render() {
         </div>
         { !this.props.auth.isAuthenticated && (
           <div
+            className="landingFooterCredit"
             style={{
               position: 'fixed',
               left: '50%',
@@ -168,6 +169,7 @@ render() {
         )}
         { !this.props.auth.isAuthenticated && (
           <div
+            className="landingFooterTagline"
             style={{
               position: 'fixed',
               left: '50%',
