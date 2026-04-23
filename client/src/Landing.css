@@ -71,8 +71,8 @@
     .landingAudioPlayer {
         left: 50% !important;
         right: auto !important;
-        bottom: 50% !important;
-        transform: translate(-50%, 50%);
+        bottom: calc(50% - 100px) !important;
+        transform: translateX(-50%);
         width: min(360px, calc(100vw - 24px)) !important;
     }
 }
