@@ -24,7 +24,7 @@ render() {
        <div style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
        
        
-         <br/><div className="LandingHeader" >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.<br/>A MERN stack using REDUX.</div>
+         <br/><div className="LandingHeader" >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</div>
        <br/>
 
         
@@ -34,10 +34,6 @@ render() {
                 <h4   style={{paddingTop:'1.5em'}} >
             
                 Please sign the guestbook. And view creative works.<br/>
-                <span className="Artist"   style={{paddingTop:'.2em'}} >
-               
-               Cover animation by <a href="https://www.beeple-crap.com/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline', textDecorationThickness: '1px', textUnderlineOffset: '2px'}}>mike winkelman</a>.
-               </span>
                 </h4>
 
                
@@ -80,8 +76,6 @@ render() {
             width: '100vw',
             height: '100vh',
             objectFit: 'cover',
-            transform: 'scale(1.05)',
-            transformOrigin: 'center center',
             zIndex: 0,
             pointerEvents: 'none'
           }}
@@ -152,6 +146,48 @@ render() {
             Your browser does not support the audio element.
           </audio>
         </div>
+        { !this.props.auth.isAuthenticated && (
+          <div
+            style={{
+              position: 'fixed',
+              left: '50%',
+              bottom: '39px',
+              transform: 'translateX(-50%)',
+              width: 'calc(100vw - 24px)',
+              maxWidth: '640px',
+              zIndex: 2002,
+              color: 'rgba(255, 255, 255, 0.92)',
+              textAlign: 'center',
+              fontSize: 'clamp(0.82rem, 1.45vw, 0.96rem)',
+              lineHeight: 1.2,
+              letterSpacing: '0.02em'
+            }}
+          >
+            Cover animation by <a href="https://www.beeple-crap.com/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline', textDecorationThickness: '1px', textUnderlineOffset: '2px'}}>mike winkelman</a>.
+          </div>
+        )}
+        { !this.props.auth.isAuthenticated && (
+          <div
+            style={{
+              position: 'fixed',
+              left: '50%',
+              bottom: '15px',
+              transform: 'translateX(-50%)',
+              width: 'calc(100vw - 24px)',
+              maxWidth: '640px',
+              zIndex: 2001,
+              color: 'rgba(255, 255, 255, 0.92)',
+              textAlign: 'center',
+              fontSize: 'clamp(0.78rem, 1.35vw, 0.9rem)',
+              lineHeight: 1.2,
+              letterSpacing: '0.04em',
+              textTransform: 'uppercase',
+              pointerEvents: 'none'
+            }}
+          >
+            A MERN stack using REDUX.
+          </div>
+        )}
       </div>
     );
   }
