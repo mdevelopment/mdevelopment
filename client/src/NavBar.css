@@ -26,9 +26,12 @@ background: rgb(47,47,47);  Old browsers */
 
 .navbar-dark .navbar-nav .nav-link.navMenuLink:hover,
 .navbar-dark .navbar-nav .nav-link.navMenuButton:hover,
-.navbar-dark .navbar-nav .nav-link.navMenuLink:focus,
 .navbar-dark .navbar-nav .nav-link.navMenuButton:focus {
     color: var(--nav-accent-green-yellow) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.navMenuLink:focus:not(.active):not(.navMenuLinkActive) {
+    color: #fff !important;
 }
 
 .navbar-dark .navbar-nav .nav-link.navMenuLink.active,
