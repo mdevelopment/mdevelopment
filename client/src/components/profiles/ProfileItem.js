@@ -7,7 +7,7 @@ import { deleteProfile } from '../../actions/profileActions';
 import adminKey from '../../config/adminKey';
 import '../../MyFonts.css'
 
-const guestBookHoverSfxUrl = 'https://mdevelopment.com/guestbook-hover.mp3';
+const guestBookHoverSfxUrl = 'https://mdevelopment.com/hover.mp3';
 let guestBookHoverAudio = null;
 
 const getGuestBookHoverAudio = () => {
