@@ -12,18 +12,25 @@ body {
         transform: translateY(10px);
     }
     to {
-        opacity: 1;
+        opacity: var(--fade-slide-end-opacity, 1);
         transform: translateY(0);
     }
 }
 
-h1 {
-    animation: fadeInSlideUp 2s ease-in-out forwards;
+.fadeSlideIn {
+    opacity: 0 !important;
+    transform: translateY(10px);
+    animation: fadeInSlideUp 2s ease-out forwards;
 }
 
-h2 {
-    animation: fadeInSlideUp 2s ease-in-out forwards;
-    animation-delay: 2s;
+.fadeSlideInDelayed {
+    opacity: 0 !important;
+    transform: translateY(10px);
+    animation: fadeInSlideUp 2s ease-out 1s forwards;
+}
+
+.fadeSlideEndSoft {
+    --fade-slide-end-opacity: 0.9;
 }
 
 .htmlBase {

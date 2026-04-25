@@ -28,16 +28,17 @@ render() {
        <div className="landingInstructions" style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
        
        
-         <br/><div className="LandingHeader" >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</div>
+           <br/><div className="LandingHeader fadeSlideIn fadeSlideEndSoft" >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</div>
 
         
          
        
        
-                <h4   style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
+            <h4 className="fadeSlideInDelayed" style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
                 Please sign the guestbook.
                 <span className="landingGuestbookBreak"> And view creative works.</span>
                 </h4>
+
 
                
 

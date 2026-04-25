@@ -58,8 +58,8 @@ class Register extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center" >Sign Up</h1>
-              <h2 className="lead text-center" style={{marginBottom:'20px'}}>
+              <h1 className="display-4 text-center fadeSlideIn fadeSlideEndSoft" >Sign Up</h1>
+              <h2 className="lead text-center fadeSlideInDelayed" style={{marginBottom:'20px'}}>
                 Register/Sign the Guest Book to enter.
               </h2>
               <form noValidate onSubmit={this.onSubmit}>

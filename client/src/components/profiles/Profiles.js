@@ -33,8 +33,8 @@ class Profiles extends Component {
           <div className="row">
             <div className="col-md-12">
 
-              <h1 className="display-4 text-center">Guest Book</h1>
-              <h2 className="lead text-center" style={{marginBottom:'20px'}}>
+              <h1 className="display-4 text-center fadeSlideIn fadeSlideEndSoft">Guest Book</h1>
+              <h2 className="lead text-center fadeSlideInDelayed" style={{marginBottom:'20px'}}>
                 Check out other visitors!
               </h2>
               {profileItems}

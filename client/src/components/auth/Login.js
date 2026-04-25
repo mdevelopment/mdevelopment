@@ -58,8 +58,8 @@ class Login extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Log In</h1>
-              <h2 className="lead text-center" style={{marginBottom:'20px'}}>
+              <h1 className="display-4 text-center fadeSlideIn fadeSlideEndSoft">Log In</h1>
+              <h2 className="lead text-center fadeSlideInDelayed" style={{marginBottom:'20px'}}>
                 Log onto the site.
               </h2>
               <form onSubmit={this.onSubmit}>
