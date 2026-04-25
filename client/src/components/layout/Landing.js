@@ -9,11 +9,8 @@ import '../../Landing.css';
 class Landing extends Component {
   state = {
     showPrimaryCopy: false,
-    showSecondaryCopy: false,
-    videoReady: false
+    showSecondaryCopy: false
   };
-
-  videoRef = React.createRef();
 
   componentDidMount() {
     this.primaryCopyTimer = window.setTimeout(() => {
@@ -23,38 +20,11 @@ class Landing extends Component {
     this.secondaryCopyTimer = window.setTimeout(() => {
       this.setState({ showSecondaryCopy: true });
     }, 1040);
-
-    this.videoPlaybackTimer = window.setTimeout(() => {
-      this.startVideoPlayback();
-    }, 40);
   }
 
   componentWillUnmount() {
     window.clearTimeout(this.primaryCopyTimer);
     window.clearTimeout(this.secondaryCopyTimer);
-    window.clearTimeout(this.videoPlaybackTimer);
-  }
-
-  startVideoPlayback = () => {
-    const videoElement = this.videoRef.current;
-
-    if (!videoElement) {
-      return;
-    }
-
-    const playbackAttempt = videoElement.play();
-
-    if (playbackAttempt && typeof playbackAttempt.catch === 'function') {
-      playbackAttempt.catch(() => {});
-    }
-  }
-
-  handleVideoCanPlay = () => {
-    if (!this.state.videoReady) {
-      this.setState({ videoReady: true });
-    }
-
-    this.startVideoPlayback();
   }
 
   scrollToBottom = () => {
@@ -65,7 +35,6 @@ class Landing extends Component {
 render() {
   const primaryCopyClass = this.state.showPrimaryCopy ? 'fadeSlideVisible' : '';
   const secondaryCopyClass = this.state.showSecondaryCopy ? 'fadeSlideVisible' : '';
-  const landingVideoClass = this.state.videoReady ? 'landingVideoBackground landingVideoVisible' : 'landingVideoBackground';
 
   const landingTrack = 'https://mdevelopment.com/mdevelopment%20-%20Ice%20Cream%20Space%20Mystery.mp3';
   const landingVideo = 'https://mdevelopment.com/dirty_ribbon_(loop)_v1%20(1080p)_2.mp4';
@@ -122,16 +91,12 @@ render() {
             backgroundColor: '#000'
           }}>
         <video
-          ref={this.videoRef}
-          className={landingVideoClass}
           autoPlay
           muted
           loop
           playsInline
           preload="auto"
           src={landingVideo}
-          onCanPlay={this.handleVideoCanPlay}
-          onLoadedData={this.handleVideoCanPlay}
           style={{
             position: 'fixed',
             top: 0,
