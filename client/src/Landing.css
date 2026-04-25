@@ -81,7 +81,9 @@
         height: auto !important;
         min-height: 100vh !important;
         overflow: visible !important;
-        padding-bottom: 24px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        padding-bottom: 0 !important;
     }
 
     .landingInstructions {
@@ -155,10 +157,12 @@
         width: calc(100vw - 24px) !important;
         text-align: center !important;
         margin: 0 auto !important;
+        z-index: 2001 !important;
     }
 
     .landingFooterCredit {
-        margin-top: 20px !important;
+        margin-top: auto !important;
+        padding-top: 20px !important;
         font-size: 0.82rem !important;
     }
 
@@ -168,73 +172,7 @@
 
     .landingFooterTagline {
         margin-top: 6px !important;
-        margin-bottom: 25px !important;
-        font-size: 0.7rem !important;
-    }
-}
-
-@media only screen and (max-width: 900px) and (orientation: landscape) {
-    .landing {
-        height: auto !important;
-        min-height: 100vh !important;
-        overflow: visible !important;
-        padding-bottom: 24px !important;
-    }
-
-    .landingInstructions {
-        position: relative !important;
-        top: auto !important;
-        left: auto !important;
-        transform: none !important;
-        width: calc(100vw - 48px) !important;
-        max-width: 700px !important;
-        margin: 20px auto 0 !important;
-        padding-left: 20px;
-        padding-right: 20px;
-        z-index: 2100 !important;
-    }
-
-    .landingInstructions br {
-        display: none;
-    }
-
-    .landingAudioPlayer {
-        position: relative !important;
-        left: auto !important;
-        right: auto !important;
-        bottom: auto !important;
-        transform: none !important;
-        width: min(360px, calc(100vw - 48px)) !important;
-        margin: 24px auto 14px !important;
-        padding: 8px 10px !important;
-        background-color: rgba(0, 0, 0, 0.78) !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.35) !important;
-    }
-
-    .landingFooterCredit,
-    .landingFooterTagline {
-        position: relative !important;
-        left: auto !important;
-        bottom: auto !important;
-        transform: none !important;
-        width: calc(100vw - 48px) !important;
-        text-align: center !important;
-        margin: 0 auto !important;
-    }
-
-    .landingFooterCredit {
-        margin-top: 20px !important;
-        font-size: 0.82rem !important;
-    }
-
-    .landingFooterCredit a {
-        font-size: 1em !important;
-    }
-
-    .landingFooterTagline {
-        margin-top: 6px !important;
-        margin-bottom: 25px !important;
+        padding-bottom: 25px !important;
         font-size: 0.7rem !important;
     }
 }
