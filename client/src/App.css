@@ -87,3 +87,29 @@ p {
         margin-top: 0px;
     }
 }
+
+.landscapeBlocker {
+    display: none;
+}
+
+@media screen and (orientation: landscape) and (max-height: 480px) {
+    .landscapeBlocker {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        z-index: 99999;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.05rem;
+        text-align: center;
+        padding: 20px;
+        letter-spacing: 0.02em;
+    }
+}

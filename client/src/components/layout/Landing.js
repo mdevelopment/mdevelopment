@@ -12,6 +12,10 @@ class Landing extends Component {
    // console.log(this.props.auth)
   }
 
+  scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+
  
 render() {
 
@@ -45,6 +49,13 @@ render() {
                 <Link to="/login" className="btn btn-md btn-light btn-lg myBtnLogin">
                   Log in
                 </Link>
+                <button
+                  className="mobileScrollArrow"
+                  onClick={this.scrollToBottom}
+                  aria-label="Scroll to bottom"
+                >
+                  &#9660;
+                </button>
           </div>
       )
 

@@ -56,6 +56,10 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
+            <div className="landscapeBlocker">
+              <div style={{fontSize: '2.8rem', marginBottom: '10px'}}>↺</div>
+              <div>Please rotate your device to portrait mode.</div>
+            </div>
             <Navbar />
             <div className="container">
               <Switch>
