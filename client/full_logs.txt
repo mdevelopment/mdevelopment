@@ -1,0 +1,465 @@
+2026-04-18T22:36:10.192151+00:00 app[api]: Initial release by user marcelhumes@gmail.com
+2026-04-18T22:36:10.192151+00:00 app[api]: Release v1 created by user marcelhumes@gmail.com
+2026-04-18T22:36:10.352547+00:00 app[api]: Release v2 created by user marcelhumes@gmail.com
+2026-04-18T22:36:10.352547+00:00 app[api]: Enable Logplex by user marcelhumes@gmail.com
+2026-04-18T22:36:59.035460+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=54a75ff5-b2b5-9d86-82be-9a38d1282e95 fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-18T22:37:00.200178+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=5e46d79f-cc3d-59df-c0db-536b16f79fe4 fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-18T23:13:52.357471+00:00 app[api]: Release v3 created by user marcelhumes@gmail.com
+2026-04-18T23:13:52.357471+00:00 app[api]: Set MONGO_URI, SECRET_OR_KEY config vars by user marcelhumes@gmail.com
+2026-04-18T23:40:12.000000+00:00 app[api]: Build started by user marcelhumes@gmail.com
+2026-04-18T23:40:19.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8b5af49c-5b9a-4b67-b826-de2383242b3a/activity/builds/1b0404b9-de4c-44c9-b99c-93ec180bd064
+2026-04-18T23:48:14.210337+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=6c2d10ba-06a8-68db-5a28-abe05c1e37ea fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-18T23:48:15.298230+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=e3bb0626-f567-a56b-5e5b-1ea61531ddc0 fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T00:00:14.113698+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=2f99ecd9-3a58-1dd2-dd9a-f9dea693f84d fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T00:00:15.272245+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=a7b4425b-a590-0d73-9bcc-f9788c458552 fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T00:27:49.508468+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=65cfd1ab-5230-1169-5787-9374cb6c49b1 fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T00:27:50.600923+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=00d93186-bcf3-51c8-8b77-9a09f8147a99 fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T00:46:48.639457+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=d0f4e2de-1823-466b-59e9-7c4912a3afaa fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T00:46:49.903384+00:00 heroku[router]: at=error code=H81 desc="Blank app" method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=1bcb1b2d-cccb-cec5-596a-af48b34c83b7 fwd="" dyno= connect=0ms service=0ms status=502 bytes=575 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T00:58:01.000000+00:00 app[api]: Build started by user marcelhumes@gmail.com
+2026-04-19T00:58:09.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8b5af49c-5b9a-4b67-b826-de2383242b3a/activity/builds/5af55a13-fa65-48d8-a547-77ed538358a4
+2026-04-19T00:58:19.000000+00:00 app[api]: Build started by user marcelhumes@gmail.com
+2026-04-19T00:59:10.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8b5af49c-5b9a-4b67-b826-de2383242b3a/activity/builds/2879af66-93f1-4e08-8585-601d4e335f4d
+2026-04-19T01:01:48.000000+00:00 app[api]: Build started by user marcelhumes@gmail.com
+2026-04-19T01:02:34.000000+00:00 app[api]: Build started by user marcelhumes@gmail.com
+2026-04-19T01:03:10.765805+00:00 app[api]: Release v4 created by user marcelhumes@gmail.com
+2026-04-19T01:03:10.765805+00:00 app[api]: Deploy by user marcelhumes@gmail.com
+2026-04-19T01:03:10.777212+00:00 app[api]: Scaled to web@1:Basic by user marcelhumes@gmail.com
+2026-04-19T01:03:16.000000+00:00 app[api]: Build succeeded
+2026-04-19T01:03:18.886185+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T01:03:20.303749+00:00 app[web.1]: 
+2026-04-19T01:03:20.303793+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T01:03:20.303796+00:00 app[web.1]: > node server.js
+2026-04-19T01:03:20.303796+00:00 app[web.1]: 
+2026-04-19T01:03:21.047852+00:00 app[web.1]: Server running on port 37013
+2026-04-19T01:03:21.185900+00:00 app[web.1]: { Error: bad auth : authentication failed
+2026-04-19T01:03:21.185902+00:00 app[web.1]: at MessageStream.messageHandler (/app/node_modules/mongodb/lib/cmap/connection.js:299:20)
+2026-04-19T01:03:21.185902+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:03:21.185903+00:00 app[web.1]: at MessageStream.emit (events.js:210:7)
+2026-04-19T01:03:21.185903+00:00 app[web.1]: at processIncomingData (/app/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+2026-04-19T01:03:21.185903+00:00 app[web.1]: at MessageStream._write (/app/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+2026-04-19T01:03:21.185904+00:00 app[web.1]: at doWrite (_stream_writable.js:385:12)
+2026-04-19T01:03:21.185905+00:00 app[web.1]: at writeOrBuffer (_stream_writable.js:371:5)
+2026-04-19T01:03:21.185913+00:00 app[web.1]: at MessageStream.Writable.write (_stream_writable.js:288:11)
+2026-04-19T01:03:21.185914+00:00 app[web.1]: at TLSSocket.ondata (_stream_readable.js:642:20)
+2026-04-19T01:03:21.185914+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:03:21.185914+00:00 app[web.1]: at TLSSocket.emit (events.js:210:7)
+2026-04-19T01:03:21.185915+00:00 app[web.1]: at addChunk (_stream_readable.js:266:12)
+2026-04-19T01:03:21.185915+00:00 app[web.1]: at readableAddChunk (_stream_readable.js:253:11)
+2026-04-19T01:03:21.185915+00:00 app[web.1]: at TLSSocket.Readable.push (_stream_readable.js:211:10)
+2026-04-19T01:03:21.185917+00:00 app[web.1]: at TLSWrap.onread (net.js:585:20) ok: 0, code: 8000, codeName: 'AtlasError', name: 'MongoError' }
+2026-04-19T01:03:21.515887+00:00 heroku[web.1]: State changed from starting to up
+2026-04-19T01:04:08.409476+00:00 app[api]: Deploy by user marcelhumes@gmail.com
+2026-04-19T01:04:08.409476+00:00 app[api]: Release v5 created by user marcelhumes@gmail.com
+2026-04-19T01:04:08.674297+00:00 heroku[web.1]: Restarting
+2026-04-19T01:04:08.730967+00:00 heroku[web.1]: State changed from up to starting
+2026-04-19T01:04:09.579405+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-04-19T01:04:09.692450+00:00 heroku[web.1]: Process exited with status 143
+2026-04-19T01:04:12.000000+00:00 app[api]: Build succeeded
+2026-04-19T01:04:16.535722+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T01:04:17.664030+00:00 app[web.1]: 
+2026-04-19T01:04:17.664053+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T01:04:17.664054+00:00 app[web.1]: > node server.js
+2026-04-19T01:04:17.664054+00:00 app[web.1]: 
+2026-04-19T01:04:18.282783+00:00 app[web.1]: Server running on port 7568
+2026-04-19T01:04:18.411987+00:00 app[web.1]: { Error: bad auth : authentication failed
+2026-04-19T01:04:18.411988+00:00 app[web.1]: at MessageStream.messageHandler (/app/node_modules/mongodb/lib/cmap/connection.js:299:20)
+2026-04-19T01:04:18.411988+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:04:18.411989+00:00 app[web.1]: at MessageStream.emit (events.js:210:7)
+2026-04-19T01:04:18.411989+00:00 app[web.1]: at processIncomingData (/app/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+2026-04-19T01:04:18.411989+00:00 app[web.1]: at MessageStream._write (/app/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+2026-04-19T01:04:18.411990+00:00 app[web.1]: at doWrite (_stream_writable.js:385:12)
+2026-04-19T01:04:18.411990+00:00 app[web.1]: at writeOrBuffer (_stream_writable.js:371:5)
+2026-04-19T01:04:18.411990+00:00 app[web.1]: at MessageStream.Writable.write (_stream_writable.js:288:11)
+2026-04-19T01:04:18.411991+00:00 app[web.1]: at TLSSocket.ondata (_stream_readable.js:642:20)
+2026-04-19T01:04:18.411991+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:04:18.411991+00:00 app[web.1]: at TLSSocket.emit (events.js:210:7)
+2026-04-19T01:04:18.411992+00:00 app[web.1]: at addChunk (_stream_readable.js:266:12)
+2026-04-19T01:04:18.411992+00:00 app[web.1]: at readableAddChunk (_stream_readable.js:253:11)
+2026-04-19T01:04:18.411992+00:00 app[web.1]: at TLSSocket.Readable.push (_stream_readable.js:211:10)
+2026-04-19T01:04:18.411992+00:00 app[web.1]: at TLSWrap.onread (net.js:585:20) ok: 0, code: 8000, codeName: 'AtlasError', name: 'MongoError' }
+2026-04-19T01:04:18.762171+00:00 heroku[web.1]: State changed from starting to up
+2026-04-19T01:04:54.751666+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:15:57.433540+00:00 heroku[web.1]: Restarting
+2026-04-19T01:15:57.490499+00:00 heroku[web.1]: State changed from up to starting
+2026-04-19T01:15:58.214832+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-04-19T01:15:58.330687+00:00 heroku[web.1]: Process exited with status 143
+2026-04-19T01:16:05.332756+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T01:16:06.442992+00:00 app[web.1]: 
+2026-04-19T01:16:06.443006+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T01:16:06.443007+00:00 app[web.1]: > node server.js
+2026-04-19T01:16:06.443014+00:00 app[web.1]: 
+2026-04-19T01:16:07.020755+00:00 app[web.1]: Server running on port 13298
+2026-04-19T01:16:07.139742+00:00 heroku[web.1]: State changed from starting to up
+2026-04-19T01:16:07.167208+00:00 app[web.1]: { Error: bad auth : authentication failed
+2026-04-19T01:16:07.167212+00:00 app[web.1]: at MessageStream.messageHandler (/app/node_modules/mongodb/lib/cmap/connection.js:299:20)
+2026-04-19T01:16:07.167212+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:16:07.167212+00:00 app[web.1]: at MessageStream.emit (events.js:210:7)
+2026-04-19T01:16:07.167213+00:00 app[web.1]: at processIncomingData (/app/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+2026-04-19T01:16:07.167213+00:00 app[web.1]: at MessageStream._write (/app/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+2026-04-19T01:16:07.167213+00:00 app[web.1]: at doWrite (_stream_writable.js:385:12)
+2026-04-19T01:16:07.167214+00:00 app[web.1]: at writeOrBuffer (_stream_writable.js:371:5)
+2026-04-19T01:16:07.167231+00:00 app[web.1]: at MessageStream.Writable.write (_stream_writable.js:288:11)
+2026-04-19T01:16:07.167231+00:00 app[web.1]: at TLSSocket.ondata (_stream_readable.js:642:20)
+2026-04-19T01:16:07.167231+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:16:07.167232+00:00 app[web.1]: at TLSSocket.emit (events.js:210:7)
+2026-04-19T01:16:07.167232+00:00 app[web.1]: at addChunk (_stream_readable.js:266:12)
+2026-04-19T01:16:07.167232+00:00 app[web.1]: at readableAddChunk (_stream_readable.js:253:11)
+2026-04-19T01:16:07.167232+00:00 app[web.1]: at TLSSocket.Readable.push (_stream_readable.js:211:10)
+2026-04-19T01:16:07.167233+00:00 app[web.1]: at TLSWrap.onread (net.js:585:20) ok: 0, code: 8000, codeName: 'AtlasError', name: 'MongoError' }
+2026-04-19T01:16:08.565975+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:17:26.529570+00:00 heroku[web.1]: Restarting
+2026-04-19T01:17:26.533852+00:00 heroku[web.1]: State changed from up to starting
+2026-04-19T01:17:27.243949+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-04-19T01:17:27.345696+00:00 heroku[web.1]: Process exited with status 143
+2026-04-19T01:17:33.815950+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T01:17:34.876483+00:00 app[web.1]: 
+2026-04-19T01:17:34.876520+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T01:17:34.876521+00:00 app[web.1]: > node server.js
+2026-04-19T01:17:34.876521+00:00 app[web.1]: 
+2026-04-19T01:17:35.436074+00:00 app[web.1]: Server running on port 39340
+2026-04-19T01:17:35.561946+00:00 app[web.1]: { Error: bad auth : authentication failed
+2026-04-19T01:17:35.561948+00:00 app[web.1]: at MessageStream.messageHandler (/app/node_modules/mongodb/lib/cmap/connection.js:299:20)
+2026-04-19T01:17:35.561948+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:17:35.561949+00:00 app[web.1]: at MessageStream.emit (events.js:210:7)
+2026-04-19T01:17:35.561949+00:00 app[web.1]: at processIncomingData (/app/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+2026-04-19T01:17:35.561949+00:00 app[web.1]: at MessageStream._write (/app/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+2026-04-19T01:17:35.561950+00:00 app[web.1]: at doWrite (_stream_writable.js:385:12)
+2026-04-19T01:17:35.561950+00:00 app[web.1]: at writeOrBuffer (_stream_writable.js:371:5)
+2026-04-19T01:17:35.561956+00:00 app[web.1]: at MessageStream.Writable.write (_stream_writable.js:288:11)
+2026-04-19T01:17:35.561956+00:00 app[web.1]: at TLSSocket.ondata (_stream_readable.js:642:20)
+2026-04-19T01:17:35.561957+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:17:35.561957+00:00 app[web.1]: at TLSSocket.emit (events.js:210:7)
+2026-04-19T01:17:35.561957+00:00 app[web.1]: at addChunk (_stream_readable.js:266:12)
+2026-04-19T01:17:35.561957+00:00 app[web.1]: at readableAddChunk (_stream_readable.js:253:11)
+2026-04-19T01:17:35.561965+00:00 app[web.1]: at TLSSocket.Readable.push (_stream_readable.js:211:10)
+2026-04-19T01:17:35.561966+00:00 app[web.1]: at TLSWrap.onread (net.js:585:20) ok: 0, code: 8000, codeName: 'AtlasError', name: 'MongoError' }
+2026-04-19T01:17:35.629218+00:00 heroku[web.1]: State changed from starting to up
+2026-04-19T01:17:42.408492+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:18:06.032963+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:18:49.472362+00:00 heroku[router]: at=info method=GET path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=4fd4ee5c-731b-3378-eb9b-d69fad6af684 fwd="74.68.125.245" dyno=web.1 connect=0ms service=10ms status=200 bytes=3257 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:19:11.631204+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:19:33.447584+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:20:48.074077+00:00 heroku[router]: at=info method=GET path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=d8f600c9-9db9-d0e4-65b9-77d04cf1d32b fwd="74.68.125.245" dyno=web.1 connect=0ms service=5ms status=200 bytes=3257 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:48.142538+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=3f6442ac-648d-d8ba-91c3-6df4b37e0b28 fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=5429 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:48.152580+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=ee45d0c4-9955-71eb-ac49-5095d5ee6b7c fwd="74.68.125.245" dyno=web.1 connect=0ms service=7ms status=200 bytes=216966 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:48.165547+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=fb853673-f059-712c-459a-187c5eb0c809 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=60254 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:48.231360+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=8799edbe-8590-b625-1d4b-fb54f0d7bb36 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=317 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:48.522904+00:00 heroku[router]: at=info method=GET path="/static/media/logoM.cd0723aa.svg" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=3d3d81fa-d10a-75c0-7fae-d08e12431204 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=200 bytes=2703 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:48.524211+00:00 heroku[router]: at=info method=GET path="/static/media/Manim2.fd455202.gif" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=adec72a8-9ed2-ac90-049a-a9c0c5718495 fwd="74.68.125.245" dyno=web.1 connect=0ms service=7ms status=200 bytes=2541855 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:49.697552+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=e57b684e-1770-3444-53e1-f2a9e27e8d98 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=2046 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:49.754141+00:00 heroku[router]: at=info method=GET path="/service-worker.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=8cecb256-8d73-2984-8de1-dfa579c6ed16 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=1183 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:49.853387+00:00 heroku[router]: at=info method=GET path="/precache-manifest.c73bdc8fddc4763d348468159045bb7a.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=11ec508e-1d71-c9b1-4b75-eb439eb0ef2c fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=872 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:49.940719+00:00 heroku[router]: at=info method=GET path="/index.html?__WB_REVISION__=a603d1213e971bdd84230571900b9f30" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=2613c62c-c3fc-c2da-58cb-4fb41db4acb8 fwd="74.68.125.245" dyno=web.1 connect=0ms service=2ms status=200 bytes=3257 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:49.943518+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css?__WB_REVISION__=793231334e6b15057756" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=799a7ac9-2094-e68c-5ea3-fcb04d54f8a2 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=200 bytes=5429 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:49.947345+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js?__WB_REVISION__=05ae860b5807bd2e58ec" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=01b00675-2a0f-70b2-f1fe-394caee21dd8 fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=216966 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:49.963855+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.LICENSE.txt?__WB_REVISION__=bb3dad6c9f1518941b11062936e04b11" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=f9fc831e-0ae3-6ba9-d90b-ff3a55e63647 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=1280 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:49.964642+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js?__WB_REVISION__=793231334e6b15057756" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=297619f4-e6c4-4128-8d0d-41aa9b51f4bc fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=60254 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:49.990750+00:00 heroku[router]: at=info method=GET path="/static/js/runtime-main.81534a39.js?__WB_REVISION__=05fbb5ed970a924e23b7" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=579eab5f-38fe-2f71-e4e0-abc4353783a8 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=1553 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:50.020927+00:00 heroku[router]: at=info method=GET path="/static/media/Manim2.fd455202.gif?__WB_REVISION__=fd455202b1eab7bcd01ff5daa04e5463" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=ea7906ae-a5aa-89ce-000f-3ea403765afa fwd="74.68.125.245" dyno=web.1 connect=0ms service=7ms status=200 bytes=2541855 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:20:50.029392+00:00 heroku[router]: at=info method=GET path="/static/media/logoM.cd0723aa.svg?__WB_REVISION__=cd0723aade6f0e5ccbe28e1afff4ec5b" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=988a066a-84fd-8cf7-4cf1-c58f285f2072 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=200 bytes=2703 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:21:07.155826+00:00 heroku[router]: at=info method=GET path="/api/profile/all" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=e6ecc96a-5960-8346-ef02-c47daf138ef7 fwd="74.68.125.245" dyno=web.1 connect=0ms service=10015ms status=404 bytes=35 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:22:43.928580+00:00 app[api]: Set MONGO_URI config vars by user marcelhumes@gmail.com
+2026-04-19T01:22:43.928580+00:00 app[api]: Release v6 created by user marcelhumes@gmail.com
+2026-04-19T01:22:44.203257+00:00 heroku[web.1]: Restarting
+2026-04-19T01:22:44.259926+00:00 heroku[web.1]: State changed from up to starting
+2026-04-19T01:22:45.024877+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-04-19T01:22:45.127556+00:00 heroku[web.1]: Process exited with status 143
+2026-04-19T01:22:51.542395+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T01:22:52.685759+00:00 app[web.1]: 
+2026-04-19T01:22:52.685787+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T01:22:52.685790+00:00 app[web.1]: > node server.js
+2026-04-19T01:22:52.685790+00:00 app[web.1]: 
+2026-04-19T01:22:53.257367+00:00 app[web.1]: Server running on port 55746
+2026-04-19T01:22:53.391104+00:00 app[web.1]: { Error: bad auth : authentication failed
+2026-04-19T01:22:53.391108+00:00 app[web.1]: at MessageStream.messageHandler (/app/node_modules/mongodb/lib/cmap/connection.js:299:20)
+2026-04-19T01:22:53.391108+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:22:53.391108+00:00 app[web.1]: at MessageStream.emit (events.js:210:7)
+2026-04-19T01:22:53.391109+00:00 app[web.1]: at processIncomingData (/app/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+2026-04-19T01:22:53.391117+00:00 app[web.1]: at MessageStream._write (/app/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+2026-04-19T01:22:53.391117+00:00 app[web.1]: at doWrite (_stream_writable.js:385:12)
+2026-04-19T01:22:53.391118+00:00 app[web.1]: at writeOrBuffer (_stream_writable.js:371:5)
+2026-04-19T01:22:53.391142+00:00 app[web.1]: at MessageStream.Writable.write (_stream_writable.js:288:11)
+2026-04-19T01:22:53.391142+00:00 app[web.1]: at TLSSocket.ondata (_stream_readable.js:642:20)
+2026-04-19T01:22:53.391142+00:00 app[web.1]: at emitOne (events.js:115:13)
+2026-04-19T01:22:53.391143+00:00 app[web.1]: at TLSSocket.emit (events.js:210:7)
+2026-04-19T01:22:53.391143+00:00 app[web.1]: at addChunk (_stream_readable.js:266:12)
+2026-04-19T01:22:53.391143+00:00 app[web.1]: at readableAddChunk (_stream_readable.js:253:11)
+2026-04-19T01:22:53.391143+00:00 app[web.1]: at TLSSocket.Readable.push (_stream_readable.js:211:10)
+2026-04-19T01:22:53.391144+00:00 app[web.1]: at TLSWrap.onread (net.js:585:20) ok: 0, code: 8000, codeName: 'AtlasError', name: 'MongoError' }
+2026-04-19T01:22:53.447034+00:00 heroku[web.1]: State changed from starting to up
+2026-04-19T01:22:55.939997+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:27:01.420276+00:00 heroku[web.1]: Restarting
+2026-04-19T01:27:01.472962+00:00 heroku[web.1]: State changed from up to starting
+2026-04-19T01:27:02.275117+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-04-19T01:27:02.382748+00:00 heroku[web.1]: Process exited with status 143
+2026-04-19T01:27:08.951963+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T01:27:10.081293+00:00 app[web.1]: 
+2026-04-19T01:27:10.081334+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T01:27:10.081334+00:00 app[web.1]: > node server.js
+2026-04-19T01:27:10.081335+00:00 app[web.1]: 
+2026-04-19T01:27:10.664118+00:00 app[web.1]: Server running on port 47074
+2026-04-19T01:27:10.778057+00:00 heroku[web.1]: State changed from starting to up
+2026-04-19T01:27:10.792581+00:00 app[web.1]: MongoDB Connected
+2026-04-19T01:27:13.086748+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:27:36.208246+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=b3ff5b86-dd2e-3f12-3d5b-34d5a63af02b fwd="74.68.125.245" dyno=web.1 connect=0ms service=7ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:27:38.772301+00:00 heroku[router]: at=info method=GET path="/service-worker.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=38375522-aab5-78cd-f12a-f34c3cbaf9d7 fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:27:38.800158+00:00 heroku[router]: at=info method=GET path="/precache-manifest.c73bdc8fddc4763d348468159045bb7a.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=0779b1b0-2eb8-926c-4492-4d781debf872 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:27:40.439566+00:00 heroku[router]: at=info method=GET path="/api/profile/all" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=6a95e3dd-db50-1ae7-50eb-0638c26ee758 fwd="74.68.125.245" dyno=web.1 connect=0ms service=13ms status=404 bytes=35 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:28:57.858240+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): MongoError: user is not allowed to do action [find] on [test.users]
+2026-04-19T01:28:57.858271+00:00 app[web.1]: (node:20) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2026-04-19T01:29:05.436122+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): MongoError: user is not allowed to do action [find] on [test.users]
+2026-04-19T01:29:26.835136+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 3): MongoError: user is not allowed to do action [find] on [test.users]
+2026-04-19T01:29:27.838062+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=a8809378-2adf-58e3-ea36-380efa2f74e5 fwd="74.68.125.245" dyno=web.1 connect=0ms service=30000ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:29:35.432583+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=dbbe1d16-85b1-7d25-73d0-347bc81c2a8b fwd="74.68.125.245" dyno=web.1 connect=0ms service=30000ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:29:56.832735+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=c23cba15-1aa0-00c7-24e4-c0f688ccd19d fwd="74.68.125.245" dyno=web.1 connect=0ms service=30000ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:00.783451+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 4): MongoError: user is not allowed to do action [find] on [test.users]
+2026-04-19T01:30:01.690663+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 5): MongoError: user is not allowed to do action [find] on [test.users]
+2026-04-19T01:30:02.038064+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 6): MongoError: user is not allowed to do action [find] on [test.users]
+2026-04-19T01:30:02.297670+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 7): MongoError: user is not allowed to do action [find] on [test.users]
+2026-04-19T01:30:30.377725+00:00 heroku[router]: at=info method=GET path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=af8a9d4c-1b44-5245-4207-d4a549f3fcfd fwd="74.68.125.245" dyno=web.1 connect=0ms service=2ms status=200 bytes=3257 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:30.451260+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=cba3a36e-2415-3dc9-e694-8e55084bd6a7 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=317 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:30.541035+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=3ee902f0-4336-57c6-ecdb-022ca1b0fed6 fwd="74.68.125.245" dyno=web.1 connect=0ms service=4ms status=200 bytes=216966 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:30.544363+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=c725bf38-771d-6221-c29b-2a6512634086 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=60254 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:30.544672+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=ee32e73d-83c9-3a94-a563-efeac6c6d4b2 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=5429 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:30.733756+00:00 heroku[router]: at=info method=GET path="/static/media/logoM.cd0723aa.svg" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=062f305f-a9f1-f98e-7f4d-399969b72ee9 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=2703 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:30.780402+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/login" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=a818f81a-e2e8-c967-a581-e7b459117ebf fwd="74.68.125.245" dyno=web.1 connect=0ms service=30000ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:30.890575+00:00 heroku[router]: at=info method=GET path="/static/media/Manim2.fd455202.gif" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=c597d746-2661-47dd-06d4-1f03420bd5b2 fwd="74.68.125.245" dyno=web.1 connect=0ms service=97ms status=200 bytes=2541855 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.051237+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=e6ec3da9-08ef-f12a-3513-9aac38cd52fd fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=2046 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.057438+00:00 heroku[router]: at=info method=GET path="/service-worker.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=a5ea0672-d78e-344b-b808-fcc6f1518ff6 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=1183 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.241994+00:00 heroku[router]: at=info method=GET path="/precache-manifest.c73bdc8fddc4763d348468159045bb7a.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=bd62a57a-5e56-4720-7707-e2ec9836e213 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=872 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.371413+00:00 heroku[router]: at=info method=GET path="/index.html?__WB_REVISION__=a603d1213e971bdd84230571900b9f30" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=25a384d0-dc7e-4f72-ae6b-afcbf5cde558 fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=3257 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.371734+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css?__WB_REVISION__=793231334e6b15057756" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=3e4a95a3-d5a8-8401-1134-c5a4c494f44e fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=5429 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.371872+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.LICENSE.txt?__WB_REVISION__=bb3dad6c9f1518941b11062936e04b11" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=efca8388-c5c9-78df-b569-a6fd0af43bcd fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=1280 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.372436+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js?__WB_REVISION__=793231334e6b15057756" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=7c0660a6-583a-21ca-00d6-acd2bec7cb09 fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=60254 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.373392+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js?__WB_REVISION__=05ae860b5807bd2e58ec" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=d5c3d1db-22ba-b31c-375b-80bd4680c173 fwd="74.68.125.245" dyno=web.1 connect=0ms service=5ms status=200 bytes=216966 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.395683+00:00 heroku[router]: at=info method=GET path="/static/media/logoM.cd0723aa.svg?__WB_REVISION__=cd0723aade6f0e5ccbe28e1afff4ec5b" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=c7ea6f5f-5d0d-0d52-439d-225f927aeb46 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=2703 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.419059+00:00 heroku[router]: at=info method=GET path="/static/media/Manim2.fd455202.gif?__WB_REVISION__=fd455202b1eab7bcd01ff5daa04e5463" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=763473dd-a179-118a-ff04-500806eb0556 fwd="74.68.125.245" dyno=web.1 connect=0ms service=25ms status=200 bytes=2541855 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.445264+00:00 heroku[router]: at=info method=GET path="/static/js/runtime-main.81534a39.js?__WB_REVISION__=05fbb5ed970a924e23b7" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=8d6fdca1-5a94-62c0-c5ee-4b708f72ff95 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=1553 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:31.688326+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/login" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=4d0d4329-556b-b494-0be5-b01a6815de0b fwd="74.68.125.245" dyno=web.1 connect=0ms service=30000ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:32.035658+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/login" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=63453b00-d5be-9882-2959-0f132a6186f9 fwd="74.68.125.245" dyno=web.1 connect=0ms service=30000ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:30:32.284906+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/login" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=a8993360-8ddb-5e0c-a272-dadb6ab6a3c6 fwd="74.68.125.245" dyno=web.1 connect=0ms service=30000ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:31:07.763809+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 8): MongoError: user is not allowed to do action [find] on [test.users]
+2026-04-19T01:31:12.688012+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=23226ed7-efe6-f066-4e14-f59814e30ac5 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=12515 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:31:12.689898+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=792fe340-8af6-51e1-de8b-b4947f4b9a2f fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=163486 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:31:12.692123+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=1b282609-5e19-8724-191d-7b38f47af1ee fwd="74.68.125.245" dyno=web.1 connect=0ms service=5ms status=200 bytes=733270 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:31:29.538234+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 9): MongoError: user is not allowed to do action [find] on [test.users]
+2026-04-19T01:31:37.761845+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=0dc2215e-6ba1-33dd-a6e2-00d22afbc4e3 fwd="74.68.125.245" dyno=web.1 connect=0ms service=30005ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:31:59.536026+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=eabf3078-2ebb-9cab-de52-e86c25b64152 fwd="74.68.125.245" dyno=web.1 connect=0ms service=30000ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:33:21.873474+00:00 heroku[router]: at=info method=HEAD path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=a69fff4e-ea66-0b73-1136-1d8211a29b19 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:33:22.679075+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:34:03.517836+00:00 app[api]: Release v7 created by user marcelhumes@gmail.com
+2026-04-19T01:34:03.517836+00:00 app[api]: Set MONGO_URI config vars by user marcelhumes@gmail.com
+2026-04-19T01:34:03.820923+00:00 heroku[web.1]: Restarting
+2026-04-19T01:34:03.878933+00:00 heroku[web.1]: State changed from up to starting
+2026-04-19T01:34:04.491851+00:00 heroku[web.1]: Restarting
+2026-04-19T01:34:04.662169+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-04-19T01:34:04.773781+00:00 heroku[web.1]: Process exited with status 143
+2026-04-19T01:34:11.837656+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T01:34:12.049935+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T01:34:12.920587+00:00 app[web.1]: 
+2026-04-19T01:34:12.920611+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T01:34:12.920611+00:00 app[web.1]: > node server.js
+2026-04-19T01:34:12.920611+00:00 app[web.1]: 
+2026-04-19T01:34:13.135231+00:00 app[web.1]: 
+2026-04-19T01:34:13.135255+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T01:34:13.135255+00:00 app[web.1]: > node server.js
+2026-04-19T01:34:13.135256+00:00 app[web.1]: 
+2026-04-19T01:34:13.500835+00:00 app[web.1]: Server running on port 16657
+2026-04-19T01:34:13.634120+00:00 app[web.1]: MongoDB Connected
+2026-04-19T01:34:13.679794+00:00 heroku[web.1]: State changed from starting to up
+2026-04-19T01:34:13.716651+00:00 app[web.1]: Server running on port 6934
+2026-04-19T01:34:13.844925+00:00 app[web.1]: MongoDB Connected
+2026-04-19T01:34:14.572071+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-04-19T01:34:14.668872+00:00 heroku[web.1]: Process exited with status 143
+2026-04-19T01:34:30.885087+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T01:34:51.741303+00:00 heroku[router]: at=info method=HEAD path="/" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=3138f9ae-0168-e42e-7b59-4efd1aafde62 fwd="74.68.125.245" dyno=web.1 connect=0ms service=5ms status=200 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.045489+00:00 heroku[router]: at=info method=GET path="/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=a1effd08-9b7c-984d-4985-613b314fe09a fwd="74.68.125.245" dyno=web.1 connect=0ms service=4ms status=200 bytes=3257 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.087559+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=d97a6107-045a-d284-e9cc-7ae549650334 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=317 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.158606+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=730cbd4a-62fb-5717-dee3-5e258e269a2b fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.162950+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=5baa0ce0-0aa9-0b5d-1503-d8929019b405 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.168387+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=615f82ed-190f-5ddd-0124-a3c7894ca0dd fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.217709+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=0a9f7899-f3ff-75b5-8ec3-7e678a6d9d23 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.243175+00:00 heroku[router]: at=info method=GET path="/static/media/logoM.cd0723aa.svg" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=c15d9369-fa3a-897b-0c2a-8f33c7666600 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.268619+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=879eb112-26f2-02da-2913-28a1f9e49334 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.272366+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=cdfe0482-7024-ee01-fdd7-a1005bc4ebd7 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.303239+00:00 heroku[router]: at=info method=GET path="/service-worker.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=35f62d7d-7de8-9804-6993-e7bac4a04824 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.419382+00:00 heroku[router]: at=info method=GET path="/precache-manifest.c73bdc8fddc4763d348468159045bb7a.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=255af38b-d752-401f-b312-afe8b0c7cf63 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=872 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.517978+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css?__WB_REVISION__=793231334e6b15057756" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=e669587b-e464-dfd9-159a-c43b14318760 fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=5429 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.518867+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.LICENSE.txt?__WB_REVISION__=bb3dad6c9f1518941b11062936e04b11" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=bd82e09d-c819-f31b-598a-f86b7933679b fwd="74.68.125.245" dyno=web.1 connect=0ms service=4ms status=200 bytes=1280 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.518884+00:00 heroku[router]: at=info method=GET path="/index.html?__WB_REVISION__=a603d1213e971bdd84230571900b9f30" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=1491d6db-7c3a-e8e2-7cc4-5b6c9e2cf2e0 fwd="74.68.125.245" dyno=web.1 connect=0ms service=4ms status=200 bytes=3257 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.519781+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js?__WB_REVISION__=05ae860b5807bd2e58ec" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=733e1445-5ac5-7e30-73c2-def099f0cb66 fwd="74.68.125.245" dyno=web.1 connect=0ms service=5ms status=200 bytes=216966 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.546233+00:00 heroku[router]: at=info method=GET path="/static/media/logoM.cd0723aa.svg?__WB_REVISION__=cd0723aade6f0e5ccbe28e1afff4ec5b" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=972a7a22-938c-2fd5-9c59-df2b645fae98 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=2703 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.580446+00:00 heroku[router]: at=info method=GET path="/static/media/Manim2.fd455202.gif?__WB_REVISION__=fd455202b1eab7bcd01ff5daa04e5463" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=0d57a83e-0bc8-cfe1-a517-136c74084da2 fwd="74.68.125.245" dyno=web.1 connect=0ms service=36ms status=200 bytes=2541855 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.606477+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js?__WB_REVISION__=793231334e6b15057756" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=25d3cb00-d4bd-3cd2-e219-697e6dc4e294 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=60254 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:27.606571+00:00 heroku[router]: at=info method=GET path="/static/js/runtime-main.81534a39.js?__WB_REVISION__=05fbb5ed970a924e23b7" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=83ea34f2-9d1a-794b-7a5a-4226df58609b fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=1553 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:36:55.302580+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): MongoError: user is not allowed to do action [find] on [mdevelopment.users]
+2026-04-19T01:36:55.302595+00:00 app[web.1]: (node:20) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2026-04-19T01:37:25.279673+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=af0fa8cb-a95c-51c2-6849-313e2ac09fe2 fwd="74.68.125.245" dyno=web.1 connect=0ms service=30004ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:43:57.901605+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=6e1e9c5c-a7bc-2215-1be1-6db828ec4b6e fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:43:58.430872+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=9dc90af6-7e7f-ef72-2bc5-642553ce421c fwd="74.68.125.245" dyno=web.1 connect=0ms service=5ms status=200 bytes=733270 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:43:58.431147+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=0c3c532d-6f08-0877-97a4-992b497d5c1d fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=163486 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:43:58.508276+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=7abf1d7f-d387-8c1f-eed4-813521e3cf2f fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=12515 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:44:13.000785+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=2cdef293-deaa-ce86-62a6-af6132a9b43b fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=12515 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:44:13.010995+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=cb2c2f2c-f3ad-fdc2-ad90-5f2a21c46d9d fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=317 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:44:43.910837+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=f9b090b3-5fc0-71c8-843a-d0d0c50681ed fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=12515 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:44:59.444823+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=372eadac-e718-b113-4396-5c75f530e393 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=317 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:44:59.615954+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=1d4583b0-b1e9-e2bf-56d4-25cda15461fd fwd="74.68.125.245" dyno=web.1 connect=0ms service=6ms status=200 bytes=733270 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:44:59.643018+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=6272ce2f-e8d9-8353-038d-65db29b00b89 fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=163486 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:45:00.875632+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=8b4d5f47-05aa-9edc-6a20-bc11d7cc814f fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=2046 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:45:02.649750+00:00 heroku[router]: at=info method=GET path="/service-worker.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=fac445dd-71d8-d168-f91d-50c6ae23f5a8 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=1183 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:45:02.674074+00:00 heroku[router]: at=info method=GET path="/precache-manifest.c73bdc8fddc4763d348468159045bb7a.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=7d053d24-3e48-dd1f-0974-5ffe6af73f30 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=200 bytes=872 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:45:34.170919+00:00 heroku[router]: at=info method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=8fcdff11-f537-d695-b535-c7de1b40aba0 fwd="74.68.125.245" dyno=web.1 connect=0ms service=2ms status=400 bytes=80 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:48:48.852069+00:00 heroku[router]: at=info method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=1fed9f86-f020-5c34-539c-b64097f0f937 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=400 bytes=63 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:48:58.181442+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=d4d051e0-5c1c-1b34-0a1a-0180f279a8a0 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:48:58.241132+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=77447feb-eecc-a479-be56-509eb4f4d6f0 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:48:58.374823+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=017d037b-b990-cb09-c8cb-c2738859d103 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:48:58.390648+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=4a570cd5-d74c-c956-a06e-22dda600f06f fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:48:59.448234+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=6036dd4a-2199-0318-7b23-a90da5fe5d42 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:01.192817+00:00 heroku[router]: at=info method=GET path="/service-worker.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=b0371faf-1cd3-c7cb-3909-5b43a39b0924 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:01.216859+00:00 heroku[router]: at=info method=GET path="/precache-manifest.c73bdc8fddc4763d348468159045bb7a.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=7ea1aa12-9833-24f8-8259-c1ca5154cf24 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:06.432984+00:00 heroku[router]: at=info method=GET path="/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=e95b1be0-3087-4901-1a5c-377571e4b48b fwd="66.244.74.70" dyno=web.1 connect=0ms service=1ms status=200 bytes=3257 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:06.566472+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=fab3ab63-ab36-2498-d449-2448aa85a719 fwd="66.244.74.70" dyno=web.1 connect=0ms service=1ms status=200 bytes=5429 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:06.605613+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=e684b240-c721-9484-53ab-b0156d177743 fwd="66.244.74.70" dyno=web.1 connect=0ms service=2ms status=200 bytes=216966 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:06.665255+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=6084d7f9-9cf1-6ea4-aa35-f837abb9e277 fwd="66.244.74.70" dyno=web.1 connect=0ms service=2ms status=200 bytes=60254 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:07.485494+00:00 heroku[router]: at=info method=GET path="/static/media/logoM.cd0723aa.svg" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=8bc0b131-73e3-0bf1-3a0f-46455c2f5b90 fwd="66.244.74.70" dyno=web.1 connect=0ms service=1ms status=200 bytes=2703 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:07.658123+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=c360bef8-b732-81b3-c7ae-f521ac4fa665 fwd="66.244.74.70" dyno=web.1 connect=0ms service=0ms status=200 bytes=2046 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:08.253220+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=5b7b9e69-0978-fb37-2183-d50dd6dc252e fwd="66.244.74.70" dyno=web.1 connect=0ms service=1ms status=200 bytes=317 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T01:49:27.121130+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): MongoError: user is not allowed to do action [find] on [mdevelopment.users]
+2026-04-19T01:49:57.117863+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=2653e6f0-97fa-2751-3c34-a9acd00c5b9f fwd="74.68.125.245" dyno=web.1 connect=0ms service=30000ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:09:44.729916+00:00 heroku[web.1]: Restarting
+2026-04-19T02:09:44.785638+00:00 heroku[web.1]: State changed from up to starting
+2026-04-19T02:09:45.519199+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-04-19T02:09:45.626247+00:00 heroku[web.1]: Process exited with status 143
+2026-04-19T02:09:49.584180+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:09:52.815611+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T02:09:53.872032+00:00 app[web.1]: 
+2026-04-19T02:09:53.872052+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T02:09:53.872052+00:00 app[web.1]: > node server.js
+2026-04-19T02:09:53.872053+00:00 app[web.1]: 
+2026-04-19T02:09:54.444106+00:00 app[web.1]: Server running on port 53796
+2026-04-19T02:09:54.523631+00:00 heroku[web.1]: State changed from starting to up
+2026-04-19T02:09:54.571480+00:00 app[web.1]: MongoDB Connected
+2026-04-19T02:17:54.900132+00:00 heroku[web.1]: Restarting
+2026-04-19T02:17:54.957571+00:00 heroku[web.1]: State changed from up to starting
+2026-04-19T02:17:55.750887+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-04-19T02:17:55.865224+00:00 heroku[web.1]: Process exited with status 143
+2026-04-19T02:18:02.057599+00:00 heroku[web.1]: Starting process with command `npm start`
+2026-04-19T02:18:03.149677+00:00 app[web.1]: 
+2026-04-19T02:18:03.149703+00:00 app[web.1]: > MDEVELOPMENT@1.0.0 start /app
+2026-04-19T02:18:03.149704+00:00 app[web.1]: > node server.js
+2026-04-19T02:18:03.149704+00:00 app[web.1]: 
+2026-04-19T02:18:03.715803+00:00 app[web.1]: Server running on port 38352
+2026-04-19T02:18:03.848857+00:00 app[web.1]: MongoDB Connected
+2026-04-19T02:18:04.268212+00:00 heroku[web.1]: State changed from starting to up
+2026-04-19T02:18:06.329327+00:00 heroku[router]: at=info method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=20c84db2-9f06-d21d-6757-3277599b6be3 fwd="74.68.125.245" dyno=web.1 connect=6001ms service=154ms status=200 bytes=279 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:18:32.999148+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=5108faa2-7e42-07f7-8782-efa0bef6c527 fwd="74.68.125.245" dyno=web.1 connect=0ms service=4ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:18:35.606289+00:00 heroku[router]: at=info method=GET path="/service-worker.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=034e4b48-d1d1-cd73-3bd2-756008e06685 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:18:35.630907+00:00 heroku[router]: at=info method=GET path="/precache-manifest.c73bdc8fddc4763d348468159045bb7a.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=0ac4678b-39da-6517-d3d5-8da4cfd0ab1f fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:19:18.227080+00:00 heroku[router]: at=info method=POST path="/api/users/register" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=dfc130ea-758a-5e71-0249-04d574132c16 fwd="74.68.125.245" dyno=web.1 connect=0ms service=85ms status=200 bytes=290 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:19:27.785361+00:00 heroku[router]: at=info method=POST path="/api/users/login" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=dd4adf2a-d1f9-07d0-69be-b3addda04e25 fwd="74.68.125.245" dyno=web.1 connect=0ms service=82ms status=200 bytes=349 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:19:27.827408+00:00 heroku[router]: at=info method=GET path="/api/profile" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=3dd07635-c5c4-3bfb-cbe7-7732a0a108ce fwd="74.68.125.245" dyno=web.1 connect=0ms service=3ms status=500 bytes=148 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:19:27.827639+00:00 app[web.1]: TypeError: Right-hand side of 'instanceof' is not an object
+2026-04-19T02:19:27.827658+00:00 app[web.1]: at /app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:120:58
+2026-04-19T02:19:27.827659+00:00 app[web.1]: at getSecret (/app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:97:14)
+2026-04-19T02:19:27.827660+00:00 app[web.1]: at Object.module.exports [as verify] (/app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:101:10)
+2026-04-19T02:19:27.827661+00:00 app[web.1]: at Function.module.exports [as JwtVerifier] (/app/node_modules/passport-jwt/lib/verify_jwt.js:4:16)
+2026-04-19T02:19:27.827661+00:00 app[web.1]: at /app/node_modules/passport-jwt/lib/strategy.js:104:25
+2026-04-19T02:19:27.827661+00:00 app[web.1]: at JwtStrategy._secretOrKeyProvider (/app/node_modules/passport-jwt/lib/strategy.js:40:13)
+2026-04-19T02:19:27.827662+00:00 app[web.1]: at JwtStrategy.authenticate (/app/node_modules/passport-jwt/lib/strategy.js:99:10)
+2026-04-19T02:19:27.827662+00:00 app[web.1]: at attempt (/app/node_modules/passport/lib/middleware/authenticate.js:366:16)
+2026-04-19T02:19:27.827662+00:00 app[web.1]: at authenticate (/app/node_modules/passport/lib/middleware/authenticate.js:367:7)
+2026-04-19T02:19:27.827662+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2026-04-19T02:19:27.827663+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:149:13)
+2026-04-19T02:19:27.827663+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+2026-04-19T02:19:27.827663+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2026-04-19T02:19:27.827664+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:284:15
+2026-04-19T02:19:27.827664+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:346:12)
+2026-04-19T02:19:27.827664+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:280:10)
+2026-04-19T02:25:49.752174+00:00 app[web.1]: TypeError: Right-hand side of 'instanceof' is not an object
+2026-04-19T02:25:49.752187+00:00 app[web.1]: at /app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:120:58
+2026-04-19T02:25:49.752187+00:00 app[web.1]: at getSecret (/app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:97:14)
+2026-04-19T02:25:49.752188+00:00 app[web.1]: at Object.module.exports [as verify] (/app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:101:10)
+2026-04-19T02:25:49.752189+00:00 app[web.1]: at Function.module.exports [as JwtVerifier] (/app/node_modules/passport-jwt/lib/verify_jwt.js:4:16)
+2026-04-19T02:25:49.752190+00:00 app[web.1]: at /app/node_modules/passport-jwt/lib/strategy.js:104:25
+2026-04-19T02:25:49.752190+00:00 app[web.1]: at JwtStrategy._secretOrKeyProvider (/app/node_modules/passport-jwt/lib/strategy.js:40:13)
+2026-04-19T02:25:49.752190+00:00 app[web.1]: at JwtStrategy.authenticate (/app/node_modules/passport-jwt/lib/strategy.js:99:10)
+2026-04-19T02:25:49.752190+00:00 app[web.1]: at attempt (/app/node_modules/passport/lib/middleware/authenticate.js:366:16)
+2026-04-19T02:25:49.752191+00:00 app[web.1]: at authenticate (/app/node_modules/passport/lib/middleware/authenticate.js:367:7)
+2026-04-19T02:25:49.752191+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2026-04-19T02:25:49.752192+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:149:13)
+2026-04-19T02:25:49.752192+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+2026-04-19T02:25:49.752192+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2026-04-19T02:25:49.752193+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:284:15
+2026-04-19T02:25:49.752193+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:346:12)
+2026-04-19T02:25:49.752193+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:280:10)
+2026-04-19T02:25:49.752272+00:00 heroku[router]: at=info method=POST path="/api/profile" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=8b2b2e5f-ed00-2af9-5446-dbe60ed90eb4 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=500 bytes=148 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:26:17.747520+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=b97acc87-cac6-56da-1942-2f6b81578e6c fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:26:18.339391+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=89a32fea-98f8-5202-7220-ba0db7fa3cc2 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:26:18.361228+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=ca0cfdba-9cec-e2b6-157e-499a9a1a8855 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:26:18.407461+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=9a15c182-07c9-e1e9-e6fb-b6f379960b15 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:26:45.835584+00:00 heroku[router]: at=info method=POST path="/api/profile" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=4932361b-c71d-7e1f-1834-190f4f62a40c fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=500 bytes=148 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:26:45.835625+00:00 app[web.1]: TypeError: Right-hand side of 'instanceof' is not an object
+2026-04-19T02:26:45.835639+00:00 app[web.1]: at /app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:120:58
+2026-04-19T02:26:45.835639+00:00 app[web.1]: at getSecret (/app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:97:14)
+2026-04-19T02:26:45.835641+00:00 app[web.1]: at Object.module.exports [as verify] (/app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:101:10)
+2026-04-19T02:26:45.835642+00:00 app[web.1]: at Function.module.exports [as JwtVerifier] (/app/node_modules/passport-jwt/lib/verify_jwt.js:4:16)
+2026-04-19T02:26:45.835642+00:00 app[web.1]: at /app/node_modules/passport-jwt/lib/strategy.js:104:25
+2026-04-19T02:26:45.835642+00:00 app[web.1]: at JwtStrategy._secretOrKeyProvider (/app/node_modules/passport-jwt/lib/strategy.js:40:13)
+2026-04-19T02:26:45.835642+00:00 app[web.1]: at JwtStrategy.authenticate (/app/node_modules/passport-jwt/lib/strategy.js:99:10)
+2026-04-19T02:26:45.835643+00:00 app[web.1]: at attempt (/app/node_modules/passport/lib/middleware/authenticate.js:366:16)
+2026-04-19T02:26:45.835643+00:00 app[web.1]: at authenticate (/app/node_modules/passport/lib/middleware/authenticate.js:367:7)
+2026-04-19T02:26:45.835643+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2026-04-19T02:26:45.835644+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:149:13)
+2026-04-19T02:26:45.835644+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+2026-04-19T02:26:45.835644+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2026-04-19T02:26:45.835645+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:284:15
+2026-04-19T02:26:45.835645+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:346:12)
+2026-04-19T02:26:45.835645+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:280:10)
+2026-04-19T02:28:12.703099+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=907fee39-1e36-d11d-5e12-0434f963c2ef fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:12.757782+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=ac437138-f3ed-edc0-0d57-b587fc97b530 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:12.776823+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=30fd2869-6d40-ae65-3f9b-d748978a4285 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:12.779627+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=65bb4297-c852-3fa4-e803-2119c3e0ef2c fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:15.643920+00:00 heroku[router]: at=info method=GET path="/service-worker.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=873bc845-8c9b-27d3-2826-2d293b2353e4 fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:15.667726+00:00 heroku[router]: at=info method=GET path="/precache-manifest.c73bdc8fddc4763d348468159045bb7a.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=3143381a-b403-7de1-8cfd-0658e29642de fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:17.939340+00:00 heroku[router]: at=info method=GET path="/profile" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=ed6ac3ca-795d-78d9-3a93-dda252af21b5 fwd="63.117.215.9" dyno=web.1 connect=0ms service=3ms status=200 bytes=3257 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:18.073898+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=8d98999d-e072-9a2a-6d48-748f43dd5e1e fwd="63.117.215.9" dyno=web.1 connect=0ms service=3ms status=200 bytes=216966 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:18.094759+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=5ea44da6-3de7-11c9-6eb4-95d272a39a6d fwd="63.117.215.9" dyno=web.1 connect=0ms service=1ms status=200 bytes=5429 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:18.202388+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=9c97ec07-33a1-5646-00df-7fda39ef7594 fwd="63.117.215.9" dyno=web.1 connect=0ms service=1ms status=200 bytes=60254 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:18.537275+00:00 heroku[router]: at=info method=GET path="/static/media/logoM.cd0723aa.svg" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=8f107c45-feeb-6ae7-f101-111625c222ff fwd="63.117.215.9" dyno=web.1 connect=0ms service=1ms status=200 bytes=2703 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:18.796686+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=a199d91f-d7f0-4d45-1f2d-bd7f08711754 fwd="63.117.215.9" dyno=web.1 connect=0ms service=1ms status=200 bytes=2046 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:19.369405+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=bf9bad34-35d7-f713-19f7-20787d377eb0 fwd="63.117.215.9" dyno=web.1 connect=0ms service=1ms status=200 bytes=317 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:19.504128+00:00 heroku[router]: at=info method=GET path="/static/css/main.459390cd.chunk.css.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=d49d40bb-3f9f-16d2-938b-ecbe3675b791 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:19.609467+00:00 heroku[router]: at=info method=GET path="/static/js/2.aee706ab.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=91be2b13-c0f1-368d-2378-c8c0ad205a85 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:19.655461+00:00 heroku[router]: at=info method=GET path="/static/js/main.4586166f.chunk.js.map" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=0c698c5d-1604-6856-af49-a21a2efec7a2 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:22.320598+00:00 heroku[router]: at=info method=GET path="/service-worker.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=d92b290f-5703-0f28-25e2-4a775bab57d1 fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:28:22.350663+00:00 heroku[router]: at=info method=GET path="/precache-manifest.c73bdc8fddc4763d348468159045bb7a.js" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=1e8e1006-aa79-5732-936e-f1b6d04820ea fwd="74.68.125.245" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:31:13.908479+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:31:23.051310+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:31:36.807135+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:32:47.696125+00:00 heroku[router]: at=info method=POST path="/api/users/login" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=756a307b-1d85-8774-7c2a-f3e2cda8b5ad fwd="74.68.125.245" dyno=web.1 connect=0ms service=80ms status=200 bytes=345 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:33:20.261452+00:00 heroku[router]: at=info method=POST path="/api/profile" host=arcane-refuge-07598-d0673d5ce54d.herokuapp.com request_id=0fa832a8-0073-6ea6-9c28-b52292fb202c fwd="74.68.125.245" dyno=web.1 connect=0ms service=1ms status=500 bytes=148 protocol=http1.1 tls=true tls_version=unknown
+2026-04-19T02:33:20.261486+00:00 app[web.1]: TypeError: Right-hand side of 'instanceof' is not an object
+2026-04-19T02:33:20.261499+00:00 app[web.1]: at /app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:120:58
+2026-04-19T02:33:20.261499+00:00 app[web.1]: at getSecret (/app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:97:14)
+2026-04-19T02:33:20.261500+00:00 app[web.1]: at Object.module.exports [as verify] (/app/node_modules/passport-jwt/node_modules/jsonwebtoken/verify.js:101:10)
+2026-04-19T02:33:20.261502+00:00 app[web.1]: at Function.module.exports [as JwtVerifier] (/app/node_modules/passport-jwt/lib/verify_jwt.js:4:16)
+2026-04-19T02:33:20.261502+00:00 app[web.1]: at /app/node_modules/passport-jwt/lib/strategy.js:104:25
+2026-04-19T02:33:20.261502+00:00 app[web.1]: at JwtStrategy._secretOrKeyProvider (/app/node_modules/passport-jwt/lib/strategy.js:40:13)
+2026-04-19T02:33:20.261503+00:00 app[web.1]: at JwtStrategy.authenticate (/app/node_modules/passport-jwt/lib/strategy.js:99:10)
+2026-04-19T02:33:20.261503+00:00 app[web.1]: at attempt (/app/node_modules/passport/lib/middleware/authenticate.js:366:16)
+2026-04-19T02:33:20.261503+00:00 app[web.1]: at authenticate (/app/node_modules/passport/lib/middleware/authenticate.js:367:7)
+2026-04-19T02:33:20.261503+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2026-04-19T02:33:20.261504+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:149:13)
+2026-04-19T02:33:20.261504+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+2026-04-19T02:33:20.261505+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2026-04-19T02:33:20.261505+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:284:15
+2026-04-19T02:33:20.261505+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:346:12)
+2026-04-19T02:33:20.261505+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:280:10)
+2026-04-19T02:33:35.047825+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:33:44.276724+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:33:57.300379+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:34:04.705162+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:34:20.914499+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:34:32.440754+00:00 app[api]: Log session created by user marcelhumes@gmail.com
+2026-04-19T02:34:42.248093+00:00 app[api]: Log session created by user marcelhumes@gmail.com
