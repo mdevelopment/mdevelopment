@@ -6,6 +6,26 @@ body {
     background-color: #000000;
 }
 
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeInSlideUp 2s ease-in-out forwards;
+}
+
+h2 {
+    animation: fadeInSlideUp 2s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
 .htmlBase {
     position: relative;
     /* background: url('./img/space.png') no-repeat;*/
