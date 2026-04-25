@@ -15,6 +15,8 @@ class Register extends Component {
       email: '',
       password: '',
       password2: '',
+      showPrimaryCopy: false,
+      showSecondaryCopy: false,
       errors: {}
     };
     this.onChange = this.onChange.bind(this);
@@ -25,6 +27,19 @@ class Register extends Component {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push('/dashboard');
     }
+
+    this.primaryCopyTimer = window.setTimeout(() => {
+      this.setState({ showPrimaryCopy: true });
+    }, 40);
+
+    this.secondaryCopyTimer = window.setTimeout(() => {
+      this.setState({ showSecondaryCopy: true });
+    }, 1040);
+  }
+
+  componentWillUnmount() {
+    window.clearTimeout(this.primaryCopyTimer);
+    window.clearTimeout(this.secondaryCopyTimer);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -52,14 +67,16 @@ class Register extends Component {
 
   render() {
     const { errors } = this.state;
+    const primaryCopyClass = this.state.showPrimaryCopy ? 'fadeSlideVisible' : '';
+    const secondaryCopyClass = this.state.showSecondaryCopy ? 'fadeSlideVisible' : '';
 
     return (
       <div className="register">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center fadeSlideIn fadeSlideEndSoft" >Sign Up</h1>
-              <h2 className="lead text-center fadeSlideInDelayed" style={{marginBottom:'20px'}}>
+              <h1 className={`display-4 text-center fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`} >Sign Up</h1>
+              <h2 className={`lead text-center fadeSlideBase ${secondaryCopyClass}`} style={{marginBottom:'20px'}}>
                 Register/Sign the Guest Book to enter.
               </h2>
               <form noValidate onSubmit={this.onSubmit}>

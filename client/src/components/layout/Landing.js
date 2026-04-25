@@ -7,9 +7,54 @@ import '../../Landing.css';
 
 
 class Landing extends Component {
+  state = {
+    showPrimaryCopy: false,
+    showSecondaryCopy: false,
+    videoReady: false
+  };
+
+  videoRef = React.createRef();
+
   componentDidMount() {
-  
-   // console.log(this.props.auth)
+    this.primaryCopyTimer = window.setTimeout(() => {
+      this.setState({ showPrimaryCopy: true });
+    }, 40);
+
+    this.secondaryCopyTimer = window.setTimeout(() => {
+      this.setState({ showSecondaryCopy: true });
+    }, 1040);
+
+    this.videoPlaybackTimer = window.setTimeout(() => {
+      this.startVideoPlayback();
+    }, 40);
+  }
+
+  componentWillUnmount() {
+    window.clearTimeout(this.primaryCopyTimer);
+    window.clearTimeout(this.secondaryCopyTimer);
+    window.clearTimeout(this.videoPlaybackTimer);
+  }
+
+  startVideoPlayback = () => {
+    const videoElement = this.videoRef.current;
+
+    if (!videoElement) {
+      return;
+    }
+
+    const playbackAttempt = videoElement.play();
+
+    if (playbackAttempt && typeof playbackAttempt.catch === 'function') {
+      playbackAttempt.catch(() => {});
+    }
+  }
+
+  handleVideoCanPlay = () => {
+    if (!this.state.videoReady) {
+      this.setState({ videoReady: true });
+    }
+
+    this.startVideoPlayback();
   }
 
   scrollToBottom = () => {
@@ -18,6 +63,9 @@ class Landing extends Component {
 
  
 render() {
+  const primaryCopyClass = this.state.showPrimaryCopy ? 'fadeSlideVisible' : '';
+  const secondaryCopyClass = this.state.showSecondaryCopy ? 'fadeSlideVisible' : '';
+  const landingVideoClass = this.state.videoReady ? 'landingVideoBackground landingVideoVisible' : 'landingVideoBackground';
 
   const landingTrack = 'https://mdevelopment.com/mdevelopment%20-%20Ice%20Cream%20Space%20Mystery.mp3';
   const landingVideo = 'https://mdevelopment.com/dirty_ribbon_(loop)_v1%20(1080p)_2.mp4';
@@ -28,13 +76,13 @@ render() {
        <div className="landingInstructions" style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
        
        
-           <br/><div className="LandingHeader fadeSlideIn fadeSlideEndSoft" >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</div>
+           <br/><div className={`LandingHeader fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`} >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</div>
 
         
          
        
        
-            <h4 className="fadeSlideInDelayed" style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
+                <h4 className={`fadeSlideBase ${secondaryCopyClass}`} style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
                 Please sign the guestbook.
                 <span className="landingGuestbookBreak"> And view creative works.</span>
                 </h4>
@@ -74,12 +122,16 @@ render() {
             backgroundColor: '#000'
           }}>
         <video
-          className="landingVideoFadeIn"
+          ref={this.videoRef}
+          className={landingVideoClass}
           autoPlay
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
+          src={landingVideo}
+          onCanPlay={this.handleVideoCanPlay}
+          onLoadedData={this.handleVideoCanPlay}
           style={{
             position: 'fixed',
             top: 0,
@@ -90,9 +142,7 @@ render() {
             zIndex: 0,
             pointerEvents: 'none'
           }}
-        >
-          <source src={landingVideo} type="video/mp4" />
-        </video>
+        />
         <div
           style={{
             position: 'fixed',

@@ -6,27 +6,16 @@ body {
     background-color: #000000;
 }
 
-@keyframes fadeInSlideUp {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: var(--fade-slide-end-opacity, 1);
-        transform: translateY(0);
-    }
+.fadeSlideBase {
+    opacity: 0 !important;
+    transform: translateY(10px) !important;
+    transition: opacity 2s ease-out, transform 2s ease-out;
+    will-change: opacity, transform;
 }
 
-.fadeSlideIn {
-    opacity: 0 !important;
-    transform: translateY(10px);
-    animation: fadeInSlideUp 2s ease-out forwards;
-}
-
-.fadeSlideInDelayed {
-    opacity: 0 !important;
-    transform: translateY(10px);
-    animation: fadeInSlideUp 2s ease-out 1s forwards;
+.fadeSlideVisible {
+    opacity: var(--fade-slide-end-opacity, 1) !important;
+    transform: translateY(0) !important;
 }
 
 .fadeSlideEndSoft {

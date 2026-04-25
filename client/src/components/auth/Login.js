@@ -11,6 +11,8 @@ class Login extends Component {
     this.state = {
       email: '',
       password: '',
+      showPrimaryCopy: false,
+      showSecondaryCopy: false,
       errors: {}
     };
 
@@ -22,6 +24,19 @@ class Login extends Component {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push('/dashboard');
     }
+
+    this.primaryCopyTimer = window.setTimeout(() => {
+      this.setState({ showPrimaryCopy: true });
+    }, 40);
+
+    this.secondaryCopyTimer = window.setTimeout(() => {
+      this.setState({ showSecondaryCopy: true });
+    }, 1040);
+  }
+
+  componentWillUnmount() {
+    window.clearTimeout(this.primaryCopyTimer);
+    window.clearTimeout(this.secondaryCopyTimer);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -52,14 +67,16 @@ class Login extends Component {
 
   render() {
     const { errors } = this.state;
+    const primaryCopyClass = this.state.showPrimaryCopy ? 'fadeSlideVisible' : '';
+    const secondaryCopyClass = this.state.showSecondaryCopy ? 'fadeSlideVisible' : '';
 
     return (
       <div className="login">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center fadeSlideIn fadeSlideEndSoft">Log In</h1>
-              <h2 className="lead text-center fadeSlideInDelayed" style={{marginBottom:'20px'}}>
+              <h1 className={`display-4 text-center fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`}>Log In</h1>
+              <h2 className={`lead text-center fadeSlideBase ${secondaryCopyClass}`} style={{marginBottom:'20px'}}>
                 Log onto the site.
               </h2>
               <form onSubmit={this.onSubmit}>

@@ -7,12 +7,32 @@ import { getProfiles } from '../../actions/profileActions';
 import '../../MyFonts.css'
 
 class Profiles extends Component {
+  state = {
+    showPrimaryCopy: false,
+    showSecondaryCopy: false
+  };
+
   componentDidMount() {
     this.props.getProfiles();
+
+    this.primaryCopyTimer = window.setTimeout(() => {
+      this.setState({ showPrimaryCopy: true });
+    }, 40);
+
+    this.secondaryCopyTimer = window.setTimeout(() => {
+      this.setState({ showSecondaryCopy: true });
+    }, 1040);
+  }
+
+  componentWillUnmount() {
+    window.clearTimeout(this.primaryCopyTimer);
+    window.clearTimeout(this.secondaryCopyTimer);
   }
 
   render() {
     const { profiles, loading } = this.props.profile;
+    const primaryCopyClass = this.state.showPrimaryCopy ? 'fadeSlideVisible' : '';
+    const secondaryCopyClass = this.state.showSecondaryCopy ? 'fadeSlideVisible' : '';
     let profileItems;
 
     if (profiles === null || loading) {
@@ -33,8 +53,8 @@ class Profiles extends Component {
           <div className="row">
             <div className="col-md-12">
 
-              <h1 className="display-4 text-center fadeSlideIn fadeSlideEndSoft">Guest Book</h1>
-              <h2 className="lead text-center fadeSlideInDelayed" style={{marginBottom:'20px'}}>
+              <h1 className={`display-4 text-center fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`}>Guest Book</h1>
+              <h2 className={`lead text-center fadeSlideBase ${secondaryCopyClass}`} style={{marginBottom:'20px'}}>
                 Check out other visitors!
               </h2>
               {profileItems}
