@@ -65,7 +65,7 @@ p {
 }
 
 .guestBookProfileCard:hover {
-    background-color: rgba(173, 216, 230, 0.72) !important;
+    background-color: rgb(128, 191, 255) !important;
 }
 
 .latest-profiles-img {

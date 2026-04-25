@@ -14,7 +14,7 @@ background: rgb(47,47,47);  Old browsers */
 }
 
 :root {
-    --nav-accent-green-yellow: #ADD8E6;
+    --nav-accent-green-yellow: rgb(128, 191, 255);
 }
 
 .navbar-dark .navbar-nav .nav-link.navMenuLink,
@@ -28,6 +28,11 @@ background: rgb(47,47,47);  Old browsers */
 .navbar-dark .navbar-nav .nav-link.navMenuButton:hover,
 .navbar-dark .navbar-nav .nav-link.navMenuButton:focus {
     color: var(--nav-accent-green-yellow) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.navMenuLink:active:not(.active):not(.navMenuLinkActive),
+.navbar-dark .navbar-nav .nav-link.navMenuButton:active:not(.active):not(.navMenuLinkActive) {
+    color: #fff !important;
 }
 
 .navbar-dark .navbar-nav .nav-link.navMenuLink:focus:not(.active):not(.navMenuLinkActive) {
