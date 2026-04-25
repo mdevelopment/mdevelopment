@@ -20,14 +20,16 @@ background: rgb(47,47,47);  Old browsers */
 .navbar-dark .navbar-nav .nav-link.navMenuLink,
 .navbar-dark .navbar-nav .nav-link.navMenuButton {
     color: #fff !important;
+    -webkit-text-fill-color: #fff;
     text-decoration: none !important;
     transition: color 0.2s ease;
 }
 
-.navbar-dark .navbar-nav .nav-link.navMenuLink:hover,
+.navbar-dark .navbar-nav .nav-link.navMenuLink:hover:not(.active):not(.navMenuLinkActive),
 .navbar-dark .navbar-nav .nav-link.navMenuButton:hover,
 .navbar-dark .navbar-nav .nav-link.navMenuButton:focus {
     color: var(--nav-accent-green-yellow) !important;
+    -webkit-text-fill-color: var(--nav-accent-green-yellow);
 }
 
 .navbar-dark .navbar-nav .nav-link.navMenuLink:active:not(.active):not(.navMenuLinkActive),
@@ -42,11 +44,19 @@ background: rgb(47,47,47);  Old browsers */
 .navbar-dark .navbar-nav .nav-link.navMenuLink.active,
 .navbar-dark .navbar-nav .nav-link.navMenuLink.navMenuLinkActive {
     color: #fff !important;
+    -webkit-text-fill-color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link.navMenuLink.active:hover,
-.navbar-dark .navbar-nav .nav-link.navMenuLink.navMenuLinkActive:hover {
-    color: var(--nav-accent-green-yellow) !important;
+.navbar-dark .navbar-nav .nav-link.navMenuLink.navMenuLinkActive:hover,
+.navbar-dark .navbar-nav .nav-link.navMenuLink.active:focus,
+.navbar-dark .navbar-nav .nav-link.navMenuLink.navMenuLinkActive:focus,
+.navbar-dark .navbar-nav .nav-link.navMenuLink.active:visited,
+.navbar-dark .navbar-nav .nav-link.navMenuLink.navMenuLinkActive:visited,
+.navbar-dark .navbar-nav .nav-link.navMenuLink.active:active,
+.navbar-dark .navbar-nav .nav-link.navMenuLink.navMenuLinkActive:active {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
 }
 
 @media only screen and (min-width: 769px) {
