@@ -68,6 +68,10 @@ p {
     background-color: rgb(41, 128, 200) !important;
 }
 
+.guestBookProfileCard:hover .btn {
+    color: #000 !important;
+}
+
 .latest-profiles-img {
     width: 40px;
     height: 40px;
