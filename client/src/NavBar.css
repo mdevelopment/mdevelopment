@@ -49,6 +49,11 @@ background: rgb(47,47,47);  Old browsers */
 @media only screen and (max-width: 768px) {}
 
 @media only screen and (max-width: 480px) {
+    .navbar.sticky-top {
+        position: static !important;
+        top: auto !important;
+    }
+
     .logoM {
         width: 300px!important;
         margin-left: 0px;

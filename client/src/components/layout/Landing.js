@@ -31,8 +31,8 @@ render() {
        
        
                 <h4   style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
-            
-                Please sign the guestbook. And view creative works.
+                Please sign the guestbook.
+                <span className="landingGuestbookBreak"> And view creative works.</span>
                 </h4>
 
                

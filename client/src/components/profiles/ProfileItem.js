@@ -7,9 +7,30 @@ import { deleteProfile } from '../../actions/profileActions';
 import adminKey from '../../config/adminKey';
 import '../../MyFonts.css'
 
+const guestBookHoverSfxUrl = 'https://mdevelopment.com/guestbook-hover.mp3';
+let guestBookHoverAudio = null;
+
+const getGuestBookHoverAudio = () => {
+  if (!guestBookHoverAudio) {
+    guestBookHoverAudio = new Audio(guestBookHoverSfxUrl);
+    guestBookHoverAudio.preload = 'auto';
+    guestBookHoverAudio.volume = 0.35;
+  }
+  return guestBookHoverAudio;
+};
+
 class ProfileItem extends Component {
   onDeleteClick(userId) {
     this.props.deleteProfile(userId);
+  }
+
+  playHoverSound() {
+    const audio = getGuestBookHoverAudio();
+    audio.currentTime = 0;
+    const maybePromise = audio.play();
+    if (maybePromise && typeof maybePromise.catch === 'function') {
+      maybePromise.catch(() => {});
+    }
   }
 
   render() {
@@ -18,7 +39,12 @@ class ProfileItem extends Component {
 
     return (
       <div>
-        <div className="card card-body mb-3 guestBookProfileCard">
+        <div
+          className="card card-body mb-3 guestBookProfileCard"
+          onMouseEnter={this.playHoverSound.bind(this)}
+          onFocus={this.playHoverSound.bind(this)}
+          onTouchStart={this.playHoverSound.bind(this)}
+        >
           <div className="row">
             <div className="col-lg-12 col-md-12 col-12 text-center">
               <p>{profile.user.name}</p>
