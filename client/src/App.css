@@ -25,11 +25,29 @@ body {
 .postFeedLink,
 .postFeedLink:link,
 .postFeedLink:visited {
-    color: #ccf2ff !important;
+    color: rgb(128, 191, 255) !important;
 }
 
 .postFeedLink:hover {
     color: #ffffff !important;
+}
+
+.feedPostDate {
+    color: rgb(128, 191, 255) !important;
+}
+
+.postActionsBar .feedDeleteBtn {
+    min-width: 32px;
+    min-height: 32px;
+    padding: 0.25rem 0.5rem !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    line-height: 1 !important;
+}
+
+.postActionsBar .feedDeleteBtn i {
+    line-height: 1 !important;
 }
 
 .htmlBase {

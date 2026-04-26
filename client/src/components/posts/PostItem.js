@@ -148,11 +148,11 @@ class PostItem extends Component {
           {whichModal}{" "}
         
           <div className="col-md-9" style={{}}>
-            <h4> {formattedDate} </h4>{" "}
+            <h4 className="feedPostDate"> {formattedDate} </h4>{" "}
             <h2 className="lead text-light"> {post.text} </h2>{" "}
             <div> {post.link ? linkURL : null} </div> <br />{" "}
             <div
-              className="d-flex p-0 justify-content-end col-md-12"
+              className="d-flex p-0 justify-content-end col-md-12 postActionsBar"
               style={{ position: "absolute", bottom: "-10px", right: "0px" }}
             >
               {" "}
@@ -204,7 +204,7 @@ class PostItem extends Component {
                     <button
                       onClick={this.onDeleteClick.bind(this, post._id)}
                       type="button"
-                      className="btn btn-sm  mr-1 deleteBtn"
+                      className="btn btn-sm mr-1 deleteBtn feedDeleteBtn"
                     >
                       <i className="fas fa-times" />
                     </button>
