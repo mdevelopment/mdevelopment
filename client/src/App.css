@@ -20,10 +20,10 @@ body::before {
     background: linear-gradient(
         164deg,
         #ffffff 0%,
-        #f7f7f7 22%,
-        #dcdcdc 43%,
-        #9a9a9a 66%,
-        #3a3a3a 84%,
+        #fbfbfb 36%,
+        #ececec 58%,
+        #b8b8b8 78%,
+        #5a5a5a 92%,
         #000000 100%
     );
     transition: opacity 0.55s ease;
