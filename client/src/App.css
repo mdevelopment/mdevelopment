@@ -45,6 +45,11 @@ body {
     color: #ffffff !important;
 }
 
+.creativePostCard:hover .lead,
+.creativePostCard:focus-within .lead {
+    color: #000000 !important;
+}
+
 .postActionsBar .feedDeleteBtn {
     min-width: 32px;
     min-height: 32px;
