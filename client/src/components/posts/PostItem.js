@@ -60,9 +60,9 @@ class PostItem extends Component {
             target="_blank"
             rel="noopener noreferrer"
             href={post.link}
+            className="postFeedLink"
             style={{
               fontSize: ".7em",
-              color: "white",
               textDecoration: "underline",
             }}
           >

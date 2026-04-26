@@ -32,7 +32,7 @@ class MyVerticallyCenteredModal extends Component {
        alt=""/>
         </Modal.Body>
       {/*  <Modal.Footer> */}
-          <Button style={{background:'#dffdae', border:'0', color:'#666666'}} onClick={this.props.onHide} >Close</Button>
+          <Button style={{background:'#ccf2ff', border:'0', color:'#666666'}} onClick={this.props.onHide} >Close</Button>
         {/* </Modal.Footer>*/}
       </Modal>
     );

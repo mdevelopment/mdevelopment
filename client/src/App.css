@@ -22,6 +22,16 @@ body {
     --fade-slide-end-opacity: 0.9;
 }
 
+.postFeedLink,
+.postFeedLink:link,
+.postFeedLink:visited {
+    color: #ccf2ff !important;
+}
+
+.postFeedLink:hover {
+    color: #ffffff !important;
+}
+
 .htmlBase {
     position: relative;
     /* background: url('./img/space.png') no-repeat;*/

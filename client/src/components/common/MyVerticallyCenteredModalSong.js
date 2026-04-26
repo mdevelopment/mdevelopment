@@ -46,7 +46,7 @@ class MyVerticallyCenteredModal extends Component {
             <source src={song} type="audio/mpeg"/>
           </audio>
           </div>
-          <Button style={{background:'#dffdae', border:'0', color:'#666666'}} onClick={this.props.onHide} >Close</Button>
+          <Button style={{background:'#ccf2ff', border:'0', color:'#666666'}} onClick={this.props.onHide} >Close</Button>
         {/* </Modal.Footer>*/}
       </Modal>
     );
