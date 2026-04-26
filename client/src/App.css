@@ -25,7 +25,7 @@ body {
 .postFeedLink,
 .postFeedLink:link,
 .postFeedLink:visited {
-    color: rgb(128, 191, 255) !important;
+    color: #ccf2ff !important;
 }
 
 .postFeedLink:hover {
@@ -33,7 +33,16 @@ body {
 }
 
 .feedPostDate {
-    color: rgb(128, 191, 255) !important;
+    color: #ccf2ff !important;
+}
+
+.creativePostCard:hover .feedPostDate,
+.creativePostCard:focus-within .feedPostDate,
+.creativePostCard:hover .postFeedLink,
+.creativePostCard:focus-within .postFeedLink,
+.creativePostCard:hover .postFeedLink:visited,
+.creativePostCard:focus-within .postFeedLink:visited {
+    color: #ffffff !important;
 }
 
 .postActionsBar .feedDeleteBtn {
@@ -48,6 +57,8 @@ body {
 
 .postActionsBar .feedDeleteBtn i {
     line-height: 1 !important;
+    color: #111111 !important;
+    font-size: 0.95rem !important;
 }
 
 .htmlBase {
