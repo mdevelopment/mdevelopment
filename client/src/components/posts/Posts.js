@@ -8,8 +8,13 @@ import { getPosts } from "../../actions/postActions";
 
 class Posts extends Component {
   componentDidMount() {
+    document.body.classList.add("feed-bg-active");
     this.props.getPosts();
    
+  }
+
+  componentWillUnmount() {
+    document.body.classList.remove("feed-bg-active");
   }
 
   render() {
