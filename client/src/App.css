@@ -103,6 +103,17 @@ p {
     color: #000 !important;
 }
 
+.creativePostCard {
+    background-color: #a3a6d3 !important;
+    transition: background-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.creativePostCard:hover,
+.creativePostCard:focus-within {
+    background-color: #EF426F !important;
+    box-shadow: 0 0 12px rgba(239, 66, 111, 0.45);
+}
+
 .latest-profiles-img {
     width: 40px;
     height: 40px;

@@ -10,6 +10,19 @@ import "../../MyFonts.css";
 //import formatDate from '../../utils/formatDate';
 //import mimg from '../../img/boomboomboom.jpg'
 
+const creativeHoverSfxUrl = "https://mdevelopment.com/hover_2.mp3";
+let creativeHoverAudio = null;
+
+const getCreativeHoverAudio = () => {
+  if (!creativeHoverAudio) {
+    creativeHoverAudio = new Audio(creativeHoverSfxUrl);
+    creativeHoverAudio.preload = "auto";
+    creativeHoverAudio.volume = 0.35;
+  }
+
+  return creativeHoverAudio;
+};
+
 class PostItem extends Component {
   constructor(...props) {
     super(...props);
@@ -27,6 +40,15 @@ class PostItem extends Component {
 
   onUnlikeClick(id) {
     this.props.removeLike(id);
+  }
+
+  playHoverSound() {
+    const audio = getCreativeHoverAudio();
+    audio.currentTime = 0;
+    const maybePromise = audio.play();
+    if (maybePromise && typeof maybePromise.catch === "function") {
+      maybePromise.catch(() => {});
+    }
   }
 
   findUserLike(likes) {
@@ -106,11 +128,13 @@ class PostItem extends Component {
 
     return (
       <div
-        className="card card-body border-0 postItemTop"
+        className="card card-body border-0 postItemTop creativePostCard"
         style={{
           marginBottom: "25px",
-          backgroundColor: "rgba(0, 61, 115, .6)",
         }}
+        onMouseEnter={this.playHoverSound.bind(this)}
+        onFocus={this.playHoverSound.bind(this)}
+        onTouchStart={this.playHoverSound.bind(this)}
       >
         <div className="row ">
           <div
