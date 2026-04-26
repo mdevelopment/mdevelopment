@@ -67,13 +67,6 @@ render() {
                 <Link to="/login" className="btn btn-md btn-light btn-lg myBtnLogin">
                   Log in
                 </Link>
-                <button
-                  className="mobileScrollArrow"
-                  onClick={this.scrollToBottom}
-                  aria-label="Scroll to bottom"
-                >
-                  &#9660;
-                </button>
           </div>
       )
 
@@ -108,6 +101,16 @@ render() {
             pointerEvents: 'none'
           }}
         />
+        {/* Mobile scroll-down arrow — fixed top-right, mobile only */}
+        { !this.props.auth.isAuthenticated && (
+          <button
+            className="mobileScrollArrow"
+            onClick={this.scrollToBottom}
+            aria-label="Scroll to bottom"
+          >
+            &#9660;
+          </button>
+        )}
         <div
           style={{
             position: 'fixed',

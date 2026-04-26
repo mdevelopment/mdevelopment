@@ -66,11 +66,6 @@
     display: none;
 }
 
-@keyframes mobileArrowBounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(6px); }
-}
-
 @media only screen and (max-width: 480px) {
     .landing {
         height: auto !important;
@@ -175,16 +170,25 @@
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin: 22px auto 0 !important;
+        position: fixed !important;
+        top: 72px !important;
+        right: 16px !important;
+        margin: 0 !important;
         width: 46px !important;
         height: 46px !important;
         border-radius: 50% !important;
-        background-color: #000 !important;
+        background-color: rgba(0, 0, 0, 0.65) !important;
         border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.35) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45) !important;
         color: #fff !important;
         font-size: 1.3rem !important;
         cursor: pointer !important;
+        z-index: 3000 !important;
         animation: mobileArrowBounce 1.6s ease-in-out infinite !important;
+    }
+
+    @keyframes mobileArrowBounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(6px); }
     }
 }
