@@ -33,7 +33,12 @@ class Posts extends Component {
         </div>
       );
     } else {
-      postContent = <PostFeed posts={posts} />;
+      postContent = (
+        <PostFeed
+          posts={posts}
+          showActions={this.props.auth.isAuthenticated}
+        />
+      );
     }
 
     return (

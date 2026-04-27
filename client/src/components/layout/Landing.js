@@ -52,8 +52,8 @@ render() {
        
        
                 <h4 className={`fadeSlideBase ${secondaryCopyClass}`} style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
-                Please sign the guestbook.
-                <span className="landingGuestbookBreak"> And view creative works.</span>
+                Please sign the guestbook!
+      
                 </h4>
 
 
@@ -67,13 +67,6 @@ render() {
                 <Link to="/login" className="btn btn-md btn-light btn-lg myBtnLogin">
                   Log in
                 </Link>
-                <button
-                  className="mobileScrollArrow"
-                  onClick={this.scrollToBottom}
-                  aria-label="Scroll to bottom"
-                >
-                  &#9660;
-                </button>
           </div>
       )
 

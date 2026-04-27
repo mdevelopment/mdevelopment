@@ -16,6 +16,7 @@ class Post extends Component {
 
   render() {
     const { post, loading } = this.props.post;
+    const { isAuthenticated } = this.props.auth;
     let postContent;
    
 
@@ -25,7 +26,7 @@ class Post extends Component {
       postContent = (
         <div>
           <PostItem post={post} showActions={false} />
-          <CommentForm postId={post._id} />
+          {isAuthenticated ? <CommentForm postId={post._id} /> : null}
           <CommentFeed postId={post._id} comments={post.comments} />
         </div>
       );
@@ -50,11 +51,13 @@ class Post extends Component {
 
 Post.propTypes = {
   getPost: PropTypes.func.isRequired,
-  post: PropTypes.object.isRequired
+  post: PropTypes.object.isRequired,
+  auth: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
-  post: state.post
+  post: state.post,
+  auth: state.auth
 });
 
 export default connect(mapStateToProps, { getPost })(Post);

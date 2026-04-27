@@ -64,6 +64,15 @@ class Navbar extends Component {
       style={{ paddingTop:'12px', paddingLeft:'2px' }}
       >
       <li className="nav-item">
+                <NavLink className="nav-link navMenuLink" to="/feed" exact
+               activeClassName="navMenuLinkActive"
+               style={{fontSize:'1em',paddingLeft:'15px'}}
+                >
+                  {' '}
+                  Creative
+                </NavLink>
+        </li>
+      <li className="nav-item">
                 <NavLink className="nav-link navMenuLink" to="/profiles" exact
                activeClassName="navMenuLinkActive"
                style={{fontSize:'1em',paddingLeft:'15px'}}
