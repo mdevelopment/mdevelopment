@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import axios from 'axios';
 import '../../Landing.css';
 
 
@@ -10,7 +11,8 @@ class Landing extends Component {
   state = {
     showPrimaryCopy: false,
     showSecondaryCopy: false,
-    showSignCta: false
+    showSignCta: false,
+    hasGuestbookProfile: null
   };
 
   componentDidMount() {
@@ -25,12 +27,34 @@ class Landing extends Component {
     this.signCtaTimer = window.setTimeout(() => {
       this.setState({ showSignCta: true });
     }, 1580);
+
+    this.syncGuestbookProfileStatus();
   }
 
   componentWillUnmount() {
     window.clearTimeout(this.primaryCopyTimer);
     window.clearTimeout(this.secondaryCopyTimer);
     window.clearTimeout(this.signCtaTimer);
+  }
+
+  syncGuestbookProfileStatus = () => {
+    const guestbookUserId =
+      typeof window !== 'undefined' ? localStorage.getItem('guestbookUserId') : null;
+
+    if (!guestbookUserId) {
+      this.setState({ hasGuestbookProfile: false });
+      return;
+    }
+
+    axios
+      .get(`/api/profile/user/${guestbookUserId}`)
+      .then(() => {
+        this.setState({ hasGuestbookProfile: true });
+      })
+      .catch(() => {
+        localStorage.removeItem('guestbookUserId');
+        this.setState({ hasGuestbookProfile: false });
+      });
   }
 
   scrollToBottom = () => {
@@ -42,8 +66,7 @@ render() {
   const primaryCopyClass = this.state.showPrimaryCopy ? 'fadeSlideVisible' : '';
   const secondaryCopyClass = this.state.showSecondaryCopy ? 'fadeSlideVisible' : '';
   const signCtaClass = this.state.showSignCta ? 'fadeSlideVisible' : '';
-  const hasGuestbookProfile =
-    typeof window !== 'undefined' && localStorage.getItem('hasGuestbookProfile') === 'true';
+  const hasGuestbookProfile = this.state.hasGuestbookProfile;
 
   const landingTrack = 'https://mdevelopment.com/mdevelopment%20-%20Ice%20Cream%20Space%20Mystery.mp3';
   const landingVideo = 'https://mdevelopment.com/dirty_ribbon_(loop)_v1%20(1080p)_2.mp4';
@@ -60,7 +83,7 @@ render() {
          
        
        
-                {!hasGuestbookProfile && (
+                {hasGuestbookProfile === false && (
                   <p className={`fadeSlideBase LandingSubcopy ${secondaryCopyClass}`} style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
                   Please sign the guestbook!<br/>
              

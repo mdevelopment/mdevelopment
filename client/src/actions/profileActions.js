@@ -16,7 +16,13 @@ export const getCurrentProfile = () => dispatch => {
   axios
     .get('/api/profile')
     .then(res => {
-      localStorage.setItem('hasGuestbookProfile', 'true');
+      const profileUserId =
+        typeof res.data.user === 'string'
+          ? res.data.user
+          : res.data.user && (res.data.user._id || res.data.user.id);
+      if (profileUserId) {
+        localStorage.setItem('guestbookUserId', profileUserId);
+      }
       dispatch({
         type: GET_PROFILE,
         payload: res.data
@@ -54,7 +60,13 @@ export const createProfile = (profileData, history) => dispatch => {
   axios
     .post('/api/profile', profileData)
     .then(res => {
-      localStorage.setItem('hasGuestbookProfile', 'true');
+      const profileUserId =
+        typeof res.data.user === 'string'
+          ? res.data.user
+          : res.data.user && (res.data.user._id || res.data.user.id);
+      if (profileUserId) {
+        localStorage.setItem('guestbookUserId', profileUserId);
+      }
       history.push('/dashboard');
     })
     .catch(err =>
@@ -152,7 +164,7 @@ export const deleteAccount = () => dispatch => {
     axios
       .delete('/api/profile')
       .then(res => {
-        localStorage.removeItem('hasGuestbookProfile');
+        localStorage.removeItem('guestbookUserId');
         dispatch({
           type: SET_CURRENT_USER,
           payload: {}
