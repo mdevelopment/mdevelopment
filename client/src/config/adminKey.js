@@ -1,3 +1,3 @@
 module.exports = {
-    adminKey: '69e43ba6250b100014be5741'
+    adminKey: '6a2486458237340015589bf9'
 };

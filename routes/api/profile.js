@@ -292,7 +292,7 @@ router.delete(
 // @route   DELETE api/profile/admin/:user_id
 // @desc    Admin: delete any guest profile and user account
 // @access  Private (admin only)
-const ADMIN_USER_ID = process.env.ADMIN_USER_ID || '69e43ba6250b100014be5741';
+const ADMIN_USER_ID = process.env.ADMIN_USER_ID || '6a2486458237340015589bf9';
 
 router.delete(
   '/admin/:user_id',
