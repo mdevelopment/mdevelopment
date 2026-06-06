@@ -74,11 +74,11 @@ render() {
 
             
                 {!hasSignedGuestbook ? (
-                  <Link to="/register" className={`btn btn-md btn-info mr-2 btn-lg myBtnSignUp landingSignCta fadeSlideBase ${signCtaClass}`} aria-label="Sign the guestbook by creating an account" style={{display:'inline-flex', alignItems:'center', justifyContent:'center', minWidth:'140px', minHeight:'48px', fontSize:'1.1rem', border:'2px solid #ffffff'}}>
+                  <Link to="/register" className={`btn btn-md btn-info mr-2 btn-lg myBtnSignUp landingSignCta fadeSlideBase ${signCtaClass}`} aria-label="Sign the guestbook by creating an account" style={{display:'inline-flex', alignItems:'center', justifyContent:'center', minWidth:'140px', minHeight:'48px', fontSize:'1.1rem', border:'2px solid #ffffff', borderRadius:'999px'}}>
                     Sign
                   </Link>
                 ) : (
-                  <Link to="/login" className={`btn btn-md btn-light btn-lg myBtnLogin fadeSlideBase ${signCtaClass}`} aria-label="Log in to your existing account" style={{display:'inline-flex', alignItems:'center', justifyContent:'center', minWidth:'140px', minHeight:'48px', fontSize:'1.1rem', border:'2px solid #ffffff'}}>
+                  <Link to="/login" className={`btn btn-md btn-light btn-lg myBtnLogin fadeSlideBase ${signCtaClass}`} aria-label="Log in to your existing account" style={{display:'inline-flex', alignItems:'center', justifyContent:'center', minWidth:'140px', minHeight:'48px', fontSize:'1.1rem', border:'2px solid #ffffff', borderRadius:'999px'}}>
                     Log in
                   </Link>
                 )}
