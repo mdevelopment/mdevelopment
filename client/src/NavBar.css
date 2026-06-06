@@ -9,6 +9,43 @@ background: rgb(47,47,47);  Old browsers */
     font-family: "Arial", sans-sserif;
 }
 
+/* Fallback layout so nav stays visible even when collapse behavior is inconsistent */
+.myNavStyle .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.myNavStyle .nav-link {
+    display: block;
+}
+
+@media only screen and (min-width: 576px) {
+    .myNavStyle .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .myNavStyle .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .myNavStyle .navbar-toggler {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .myNavStyle .navbar-collapse {
+        display: block !important;
+    }
+
+    .myNavStyle .navbar-nav {
+        display: block;
+    }
+}
+
 .removeThatBorder {
     outline: 0 !important
 }
