@@ -22,7 +22,7 @@ class Navbar extends Component {
 
     const memberLinks = (
    
-      <ul className="navbar-nav ml-auto" style={{paddingTop:'16px', display:'flex', alignItems:'center', listStyle:'none', margin:'0 0 0 auto', paddingLeft:'0'}}>
+      <ul className="navbar-nav ml-auto" style={{paddingTop:'16px'}}>
         <li className="nav-item">
           <NavLink className="nav-link navMenuLink" to="/feed" exact
           activeClassName="navMenuLinkActive"
@@ -62,7 +62,7 @@ class Navbar extends Component {
     );
 
     const adminLinks = (
-      <ul className="navbar-nav ml-auto" style={{paddingTop:'16px', display:'flex', alignItems:'center', listStyle:'none', margin:'0 0 0 auto', paddingLeft:'0'}}>
+      <ul className="navbar-nav ml-auto" style={{paddingTop:'16px'}}>
         <li className="nav-item">
           <NavLink className="nav-link navMenuLink" to="/feed" exact
           activeClassName="navMenuLinkActive"
@@ -109,7 +109,7 @@ class Navbar extends Component {
 
     const guestLinks = (
       <ul className="navbar-nav ml-auto"
-      style={{ paddingTop:'12px', paddingLeft:'2px', display:'flex', alignItems:'center', listStyle:'none', margin:'0 0 0 auto' }}
+      style={{ paddingTop:'12px', paddingLeft:'2px' }}
       >
       <li className="nav-item">
                 <NavLink className="nav-link navMenuLink" to="/feed" exact
@@ -154,11 +154,11 @@ class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark mb-3 sticky-top myNavStyle" style={{position:'relative', zIndex:3100, backgroundColor:'rgb(0, 102, 179)'}} >
-        <div className="container-fluid navDesktopAlign" style={{display:'flex', alignItems:'center'}}>
+      <nav className="navbar navbar-expand-sm navbar-dark mb-3 sticky-top myNavStyle" >
+        <div className="container-fluid navDesktopAlign">
           <Link className="navbar-brand" to="/">
             <img
-            style={{ width: '350px', marginLeft: '0px', marginTop:'0px', maxWidth:'90vw'}}
+            style={{ width: '350px', marginLeft: '0px', marginTop:'0px'}}
             alt="logo"
               src={logo}
               className="logoM"
@@ -177,7 +177,7 @@ class Navbar extends Component {
           <div
             className="navbar-collapse"
             id="mobile-nav"
-            style={{ display: 'flex', flexGrow: 1, justifyContent: 'flex-end', visibility:'visible', opacity:1 }}
+            style={{ display: 'flex', flexGrow: 1, justifyContent: 'flex-end' }}
           >
             {isAuthenticated ? (hasAdminPrivileges ? adminLinks : memberLinks) : guestLinks}
           </div>
