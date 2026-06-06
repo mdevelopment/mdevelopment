@@ -174,7 +174,11 @@ class Navbar extends Component {
             <span className="navbar-toggler-icon removeThatBorder" />
           </button>
 
-          <div className="collapse navbar-collapse" id="mobile-nav">
+          <div
+            className="navbar-collapse"
+            id="mobile-nav"
+            style={{ display: 'flex', flexGrow: 1, justifyContent: 'flex-end' }}
+          >
             {isAuthenticated ? (hasAdminPrivileges ? adminLinks : memberLinks) : guestLinks}
           </div>
         </div>

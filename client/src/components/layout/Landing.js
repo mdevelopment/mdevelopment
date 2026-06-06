@@ -51,7 +51,7 @@ render() {
 
 
       const showInstructions = (
-       <div className="landingInstructions" style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
+       <div className="landingInstructions" style={{marginTop:'1.2em', marginBottom:'1.2em', textAlign:'center'}}   >
        
        
            <br/><h1 className={`LandingHeader fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`} >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</h1>
@@ -74,11 +74,11 @@ render() {
 
             
                 {!hasSignedGuestbook ? (
-                  <Link to="/register" className={`btn btn-md btn-info mr-2 btn-lg myBtnSignUp landingSignCta fadeSlideBase ${signCtaClass}`} aria-label="Sign the guestbook by creating an account">
+                  <Link to="/register" className={`btn btn-md btn-info mr-2 btn-lg myBtnSignUp landingSignCta fadeSlideBase ${signCtaClass}`} aria-label="Sign the guestbook by creating an account" style={{display:'inline-flex', alignItems:'center', justifyContent:'center', minWidth:'140px', minHeight:'48px', fontSize:'1.1rem'}}>
                     Sign
                   </Link>
                 ) : (
-                  <Link to="/login" className={`btn btn-md btn-light btn-lg myBtnLogin fadeSlideBase ${signCtaClass}`} aria-label="Log in to your existing account">
+                  <Link to="/login" className={`btn btn-md btn-light btn-lg myBtnLogin fadeSlideBase ${signCtaClass}`} aria-label="Log in to your existing account" style={{display:'inline-flex', alignItems:'center', justifyContent:'center', minWidth:'140px', minHeight:'48px', fontSize:'1.1rem'}}>
                     Log in
                   </Link>
                 )}
@@ -133,7 +133,7 @@ render() {
           <div className="container  ">
             <div className="row ">
 
-              <div className="col-md-12 text-center" >
+              <div className="col-md-12 text-center" style={{textAlign:'center'}} >
               
                 { this.props.auth.isAuthenticated ? <div style={{paddingTop:'500px', paddingBottom:'500px',color:'pink'}}></div> : showInstructions }
                 {/*console.log("IS IT AUTHED?: "+this.props.auth.isAuthenticated)*/}
