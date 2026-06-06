@@ -71,25 +71,9 @@
     top: 108px;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
-    width: calc(100vw - 48px);
-    max-width: 760px;
     width: min(760px, calc(100vw - 48px));
     margin: 0 !important;
     z-index: 2100;
-}
-
-.landingInstructions .myBtnSignUp,
-.landingInstructions .myBtnLogin {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 140px;
-    min-height: 48px;
-    padding: 0.55rem 1.4rem;
-    font-size: 1.1rem;
-    line-height: 1;
-    text-align: center;
 }
 
 .landingFooterCredit {
