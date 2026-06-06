@@ -6,6 +6,7 @@ import { deletePost, addLike, removeLike } from "../../actions/postActions";
 import MyVerticallyCenteredModal from "../common/MyVerticallyCenteredModal";
 import MyVerticallyCenteredModalSong from "../common/MyVerticallyCenteredModalSong";
 import MyVerticallyCenteredModalVideo from "../common/MyVerticallyCenteredModalVideo";
+import adminKey from "../../config/adminKey";
 import "../../MyFonts.css";
 //import formatDate from '../../utils/formatDate';
 //import mimg from '../../img/boomboomboom.jpg'
@@ -200,7 +201,7 @@ class PostItem extends Component {
                   </Link>
                   */}
               
-                  {post.user === auth.user.id ? (
+                  {(post.user === auth.user.id || auth.user.id === adminKey.adminKey) ? (
                     <button
                       onClick={this.onDeleteClick.bind(this, post._id)}
                       type="button"
