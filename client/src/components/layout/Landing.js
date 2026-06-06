@@ -42,6 +42,8 @@ render() {
   const primaryCopyClass = this.state.showPrimaryCopy ? 'fadeSlideVisible' : '';
   const secondaryCopyClass = this.state.showSecondaryCopy ? 'fadeSlideVisible' : '';
   const signCtaClass = this.state.showSignCta ? 'fadeSlideVisible' : '';
+  const hasGuestbookProfile =
+    typeof window !== 'undefined' && localStorage.getItem('hasGuestbookProfile') === 'true';
 
   const landingTrack = 'https://mdevelopment.com/mdevelopment%20-%20Ice%20Cream%20Space%20Mystery.mp3';
   const landingVideo = 'https://mdevelopment.com/dirty_ribbon_(loop)_v1%20(1080p)_2.mp4';
@@ -69,9 +71,11 @@ render() {
 
 
             
-                <Link to="/register" className={`btn btn-md btn-info mr-2 btn-lg myBtnSignUp landingSignCta fadeSlideBase ${signCtaClass}`} aria-label="Sign the guestbook by creating an account">
-                  Sign
-                </Link>
+                {!hasGuestbookProfile && (
+                  <Link to="/register" className={`btn btn-md btn-info mr-2 btn-lg myBtnSignUp landingSignCta fadeSlideBase ${signCtaClass}`} aria-label="Sign the guestbook by creating an account">
+                    Sign
+                  </Link>
+                )}
                 <Link to="/login" className={`btn btn-md btn-light btn-lg myBtnLogin fadeSlideBase ${signCtaClass}`} aria-label="Log in to your existing account">
                   Log in
                 </Link>

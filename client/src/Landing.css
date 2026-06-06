@@ -43,6 +43,8 @@
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
     color: #FFF;
     border-color: #FFF!important;
+    position: relative;
+    top: 8px;
 }
 
 .myBtnLogin:hover {

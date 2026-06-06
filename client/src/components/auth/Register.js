@@ -114,8 +114,8 @@ class Register extends Component {
                 />
                 <input type="submit" className="btn  btn-block mt-4 MySubmitBtn" />
                 <br/>
-                <p className="text-center" style={{marginBottom:'0'}}>
-                  Already signed? <Link to="/login">Log in</Link>
+                <p className="text-center" style={{marginBottom:'0', fontSize:'0.81rem'}}>
+                  Already signed? <Link to="/login" style={{color:'#fff'}}>Log in</Link>
                 </p>
 
               </form>
