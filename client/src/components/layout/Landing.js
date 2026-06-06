@@ -42,6 +42,8 @@ render() {
   const primaryCopyClass = this.state.showPrimaryCopy ? 'fadeSlideVisible' : '';
   const secondaryCopyClass = this.state.showSecondaryCopy ? 'fadeSlideVisible' : '';
   const signCtaClass = this.state.showSignCta ? 'fadeSlideVisible' : '';
+  const hasGuestbookProfile =
+    typeof window !== 'undefined' && localStorage.getItem('hasGuestbookProfile') === 'true';
 
   const landingTrack = 'https://mdevelopment.com/mdevelopment%20-%20Ice%20Cream%20Space%20Mystery.mp3';
   const landingVideo = 'https://mdevelopment.com/dirty_ribbon_(loop)_v1%20(1080p)_2.mp4';
@@ -58,11 +60,13 @@ render() {
          
        
        
-                <p className={`fadeSlideBase LandingSubcopy ${secondaryCopyClass}`} style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
-                Please sign the guestbook!<br/>
-           
-           
-                </p>
+                {!hasGuestbookProfile && (
+                  <p className={`fadeSlideBase LandingSubcopy ${secondaryCopyClass}`} style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
+                  Please sign the guestbook!<br/>
+             
+             
+                  </p>
+                )}
 
 
                
