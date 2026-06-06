@@ -16,6 +16,8 @@ class Navbar extends Component {
   render() {
     const { isAuthenticated, user } = this.props.auth;
     const hasAdminPrivileges = Boolean(isAuthenticated && user.isAdmin);
+    const hasSignedGuestbook =
+      typeof window !== 'undefined' && Boolean(localStorage.getItem('guestbookUserId'));
 
 
     const memberLinks = (
@@ -127,14 +129,25 @@ class Navbar extends Component {
                   Guest Book
                 </NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink className="nav-link navMenuLink" to="/login" exact
-          activeClassName="navMenuLinkActive"
-          style={{fontSize:'1em', paddingLeft:'15px'}}
-          >
-            Log in
-          </NavLink>
-        </li>
+        {!hasSignedGuestbook ? (
+          <li className="nav-item">
+            <NavLink className="nav-link navMenuLink" to="/register" exact
+            activeClassName="navMenuLinkActive"
+            style={{fontSize:'1em', paddingLeft:'15px'}}
+            >
+              Sign
+            </NavLink>
+          </li>
+        ) : (
+          <li className="nav-item">
+            <NavLink className="nav-link navMenuLink" to="/login" exact
+            activeClassName="navMenuLinkActive"
+            style={{fontSize:'1em', paddingLeft:'15px'}}
+            >
+              Log in
+            </NavLink>
+          </li>
+        )}
        
 
       </ul>
