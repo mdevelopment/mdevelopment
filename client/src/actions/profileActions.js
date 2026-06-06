@@ -15,12 +15,13 @@ export const getCurrentProfile = () => dispatch => {
   dispatch(setProfileLoading());
   axios
     .get('/api/profile')
-    .then(res =>
+    .then(res => {
+      localStorage.setItem('hasGuestbookProfile', 'true');
       dispatch({
         type: GET_PROFILE,
         payload: res.data
-      })
-    )
+      });
+    })
     .catch(err =>
       dispatch({
         type: GET_PROFILE,
@@ -150,12 +151,13 @@ export const deleteAccount = () => dispatch => {
   if (window.confirm('Are you sure? This can NOT be undone!')) {
     axios
       .delete('/api/profile')
-      .then(res =>
+      .then(res => {
+        localStorage.removeItem('hasGuestbookProfile');
         dispatch({
           type: SET_CURRENT_USER,
           payload: {}
-        })
-      )
+        });
+      })
       .catch(err =>
         dispatch({
           type: GET_ERRORS,
