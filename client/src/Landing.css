@@ -2,9 +2,15 @@
     font-family: 'Titillium Web', sans-serif;
     font-weight: 300 !important;
     font-size: 2.8em !important;
+    line-height: 1.2;
     color: #FFFFFF !important;
     margin-bottom: 0px !important;
     opacity: .9 !important;
+}
+
+.LandingSubcopy {
+    font-size: 1.25rem;
+    color: #fff;
 }
 
 .Artist {
@@ -28,6 +34,11 @@
     border-color: #ccf2ff!important;
 }
 
+.landingSignCta {
+    position: relative;
+    top: 8px;
+}
+
 .myBtnLogin {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
     color: #FFF;
@@ -38,6 +49,15 @@
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
     color: #ccf2ff;
     border-color: #ccf2ff!important;
+}
+
+.myBtnSignUp:focus,
+.myBtnSignUp:focus-visible,
+.myBtnLogin:focus,
+.myBtnLogin:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(0, 102, 179, 0.65);
 }
 
 .Intructions {

@@ -200,7 +200,7 @@ p {
     display: none;
 }
 
-@media screen and (orientation: landscape) and (max-height: 480px) {
+@media screen and (orientation: landscape) and (max-height: 480px) and (max-width: 900px) and (hover: none) and (pointer: coarse) {
     .landscapeBlocker {
         display: flex;
         position: fixed;

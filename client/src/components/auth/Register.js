@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { registerUser } from '../../actions/authActions';
 import TextFieldGroup from '../common/TextFieldGroup';
@@ -75,9 +75,9 @@ class Register extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className={`display-4 text-center fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`} >Sign Up</h1>
+              <h1 className={`display-4 text-center fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`} >Sign</h1>
               <h2 className={`lead text-center fadeSlideBase ${secondaryCopyClass}`} style={{marginBottom:'20px'}}>
-                Register/Sign the Guest Book to enter.
+                Sign the Guest Book!
               </h2>
               <form noValidate onSubmit={this.onSubmit}>
                 <TextFieldGroup
@@ -114,6 +114,9 @@ class Register extends Component {
                 />
                 <input type="submit" className="btn  btn-block mt-4 MySubmitBtn" />
                 <br/>
+                <p className="text-center" style={{marginBottom:'0'}}>
+                  Already signed? <Link to="/login">Log in</Link>
+                </p>
 
               </form>
             </div>

@@ -9,7 +9,8 @@ import '../../Landing.css';
 class Landing extends Component {
   state = {
     showPrimaryCopy: false,
-    showSecondaryCopy: false
+    showSecondaryCopy: false,
+    showSignCta: false
   };
 
   componentDidMount() {
@@ -20,11 +21,16 @@ class Landing extends Component {
     this.secondaryCopyTimer = window.setTimeout(() => {
       this.setState({ showSecondaryCopy: true });
     }, 1040);
+
+    this.signCtaTimer = window.setTimeout(() => {
+      this.setState({ showSignCta: true });
+    }, 1580);
   }
 
   componentWillUnmount() {
     window.clearTimeout(this.primaryCopyTimer);
     window.clearTimeout(this.secondaryCopyTimer);
+    window.clearTimeout(this.signCtaTimer);
   }
 
   scrollToBottom = () => {
@@ -35,6 +41,7 @@ class Landing extends Component {
 render() {
   const primaryCopyClass = this.state.showPrimaryCopy ? 'fadeSlideVisible' : '';
   const secondaryCopyClass = this.state.showSecondaryCopy ? 'fadeSlideVisible' : '';
+  const signCtaClass = this.state.showSignCta ? 'fadeSlideVisible' : '';
 
   const landingTrack = 'https://mdevelopment.com/mdevelopment%20-%20Ice%20Cream%20Space%20Mystery.mp3';
   const landingVideo = 'https://mdevelopment.com/dirty_ribbon_(loop)_v1%20(1080p)_2.mp4';
@@ -45,27 +52,25 @@ render() {
        <div className="landingInstructions" style={{marginTop:'1.2em', marginBottom:'1.2em'}}   >
        
        
-           <br/><div className={`LandingHeader fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`} >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</div>
+           <br/><h1 className={`LandingHeader fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`} >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</h1>
 
         
          
        
        
-                <h4 className={`fadeSlideBase ${secondaryCopyClass}`} style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
-                Please sign the guestbook!
-      
-                </h4>
+                <p className={`fadeSlideBase LandingSubcopy ${secondaryCopyClass}`} style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
+                Please sign the guestbook!<br/>
+           
+           
+                </p>
 
 
                
 
 
             
-                <Link to="/register" className="btn btn-md btn-info mr-2 btn-lg myBtnSignUp">
+                <Link to="/register" className={`btn btn-md btn-info mr-2 btn-lg myBtnSignUp landingSignCta fadeSlideBase ${signCtaClass}`} aria-label="Sign the guestbook by creating an account">
                   Sign
-                </Link>
-                <Link to="/login" className="btn btn-md btn-light btn-lg myBtnLogin">
-                  Log in
                 </Link>
           </div>
       )

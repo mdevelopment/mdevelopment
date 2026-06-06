@@ -14,10 +14,11 @@ class Navbar extends Component {
   }
 
   render() {
-    const { isAuthenticated } = this.props.auth;
+    const { isAuthenticated, user } = this.props.auth;
+    const hasAdminPrivileges = Boolean(isAuthenticated && user.isAdmin);
 
 
-    const authLinks = (
+    const memberLinks = (
    
       <ul className="navbar-nav ml-auto" style={{paddingTop:'16px'}}>
         <li className="nav-item">
@@ -52,7 +53,52 @@ class Navbar extends Component {
             className="nav-link navMenuButton"
             style={{fontSize:'1em',paddingLeft:'15px', background:'none', border:'none', cursor:'pointer'}}
           >
-            Logout
+            Log out
+          </button>
+        </li>
+      </ul>
+    );
+
+    const adminLinks = (
+      <ul className="navbar-nav ml-auto" style={{paddingTop:'16px'}}>
+        <li className="nav-item">
+          <NavLink className="nav-link navMenuLink" to="/feed" exact
+          activeClassName="navMenuLinkActive"
+          style={{fontSize:'1em',paddingLeft:'15px'}}
+          >
+            Creative
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link navMenuLink" to="/profiles" exact
+            activeClassName="navMenuLinkActive"
+            style={{fontSize:'1em',paddingLeft:'15px'}}
+          >
+
+            Guest Book
+          </NavLink>
+        </li>
+         <li className="nav-item">
+          <NavLink className="nav-link navMenuLink" to="/dashboard" exact
+          activeClassName="navMenuLinkActive"
+          style={{fontSize:'1em',paddingLeft:'15px'}}
+          >
+            Your Dashboard
+          </NavLink>
+        </li>
+        <li className="nav-item" style={{paddingLeft:'15px', display:'flex', alignItems:'center'}}>
+          <span className="badge badge-warning" style={{fontSize:'0.78rem', letterSpacing:'0.04em'}}>
+            Admin
+          </span>
+        </li>
+        <li className="nav-item" style={{ color:'white'}} >
+          <button
+            type="button"
+            onClick={this.onLogoutClick.bind(this)}
+            className="nav-link navMenuButton"
+            style={{fontSize:'1em',paddingLeft:'15px', background:'none', border:'none', cursor:'pointer'}}
+          >
+            Log out
           </button>
         </li>
       </ul>
@@ -86,15 +132,7 @@ class Navbar extends Component {
           activeClassName="navMenuLinkActive"
           style={{fontSize:'1em', paddingLeft:'15px'}}
           >
-            Sign Up
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link navMenuLink" to="/login" exact
-          activeClassName="navMenuLinkActive"
-          style={{fontSize:'1em',paddingLeft:'15px'}}
-          >
-            Login
+            Sign Guestbook
           </NavLink>
         </li>
        
@@ -124,7 +162,7 @@ class Navbar extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="mobile-nav">
-            {isAuthenticated ? authLinks : guestLinks}
+            {isAuthenticated ? (hasAdminPrivileges ? adminLinks : memberLinks) : guestLinks}
           </div>
         </div>
       </nav>

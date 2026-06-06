@@ -75,9 +75,9 @@ class Login extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className={`display-4 text-center fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`}>Log In</h1>
+              <h1 className={`display-4 text-center fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`}>Log in</h1>
               <h2 className={`lead text-center fadeSlideBase ${secondaryCopyClass}`} style={{marginBottom:'20px'}}>
-                Log onto the site.
+                Log in to the site.
               </h2>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
