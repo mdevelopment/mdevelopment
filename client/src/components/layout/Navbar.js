@@ -129,7 +129,7 @@ class Navbar extends Component {
                   Guest Book
                 </NavLink>
         </li>
-        {!hasGuestbookProfile && (
+        {!hasGuestbookProfile ? (
           <li className="nav-item">
             <NavLink className="nav-link navMenuLink" to="/register" exact
             activeClassName="navMenuLinkActive"
@@ -138,15 +138,16 @@ class Navbar extends Component {
               Sign Guestbook
             </NavLink>
           </li>
+        ) : (
+          <li className="nav-item">
+            <NavLink className="nav-link navMenuLink" to="/login" exact
+            activeClassName="navMenuLinkActive"
+            style={{fontSize:'1em', paddingLeft:'15px'}}
+            >
+              Log in
+            </NavLink>
+          </li>
         )}
-        <li className="nav-item">
-          <NavLink className="nav-link navMenuLink" to="/login" exact
-          activeClassName="navMenuLinkActive"
-          style={{fontSize:'1em', paddingLeft:'15px'}}
-          >
-            Log in
-          </NavLink>
-        </li>
        
 
       </ul>

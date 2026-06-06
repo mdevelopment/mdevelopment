@@ -71,14 +71,15 @@ render() {
 
 
             
-                {!hasGuestbookProfile && (
+                {!hasGuestbookProfile ? (
                   <Link to="/register" className={`btn btn-md btn-info mr-2 btn-lg myBtnSignUp landingSignCta fadeSlideBase ${signCtaClass}`} aria-label="Sign the guestbook by creating an account">
                     Sign
                   </Link>
+                ) : (
+                  <Link to="/login" className={`btn btn-md btn-light btn-lg myBtnLogin fadeSlideBase ${signCtaClass}`} aria-label="Log in to your existing account">
+                    Log in
+                  </Link>
                 )}
-                <Link to="/login" className={`btn btn-md btn-light btn-lg myBtnLogin fadeSlideBase ${signCtaClass}`} aria-label="Log in to your existing account">
-                  Log in
-                </Link>
           </div>
       )
 
