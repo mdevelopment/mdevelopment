@@ -7,8 +7,23 @@ import { clearCurrentProfile } from '../../actions/profileActions';
 import logo from '../../img/logoM.svg';
 import  '../../NavBar.css';
 class Navbar extends Component {
+  state = {
+    isMobileMenuOpen: false
+  };
+
+  toggleMobileMenu = () => {
+    this.setState(prevState => ({
+      isMobileMenuOpen: !prevState.isMobileMenuOpen
+    }));
+  };
+
+  closeMobileMenu = () => {
+    this.setState({ isMobileMenuOpen: false });
+  };
+
   onLogoutClick(e) {
     e.preventDefault();
+    this.closeMobileMenu();
     this.props.clearCurrentProfile();
     this.props.logoutUser();
   }
@@ -27,6 +42,7 @@ class Navbar extends Component {
           <NavLink className="nav-link navMenuLink" to="/feed" exact
           activeClassName="navMenuLinkActive"
           style={{fontSize:'1em',paddingLeft:'15px'}}
+          onClick={this.closeMobileMenu}
           >
             Creative
           </NavLink>
@@ -35,6 +51,7 @@ class Navbar extends Component {
           <NavLink className="nav-link navMenuLink" to="/profiles" exact
             activeClassName="navMenuLinkActive"
             style={{fontSize:'1em',paddingLeft:'15px'}}
+            onClick={this.closeMobileMenu}
           >
 
             Guest Book
@@ -44,6 +61,7 @@ class Navbar extends Component {
           <NavLink className="nav-link navMenuLink" to="/dashboard" exact
           activeClassName="navMenuLinkActive"
           style={{fontSize:'1em',paddingLeft:'15px'}}
+          onClick={this.closeMobileMenu}
           >
             Your Dashboard
           </NavLink>
@@ -67,6 +85,7 @@ class Navbar extends Component {
           <NavLink className="nav-link navMenuLink" to="/feed" exact
           activeClassName="navMenuLinkActive"
           style={{fontSize:'1em',paddingLeft:'15px'}}
+          onClick={this.closeMobileMenu}
           >
             Creative
           </NavLink>
@@ -75,6 +94,7 @@ class Navbar extends Component {
           <NavLink className="nav-link navMenuLink" to="/profiles" exact
             activeClassName="navMenuLinkActive"
             style={{fontSize:'1em',paddingLeft:'15px'}}
+            onClick={this.closeMobileMenu}
           >
 
             Guest Book
@@ -84,6 +104,7 @@ class Navbar extends Component {
           <NavLink className="nav-link navMenuLink" to="/dashboard" exact
           activeClassName="navMenuLinkActive"
           style={{fontSize:'1em',paddingLeft:'15px'}}
+          onClick={this.closeMobileMenu}
           >
             Your Dashboard
           </NavLink>
@@ -115,6 +136,7 @@ class Navbar extends Component {
                 <NavLink className="nav-link navMenuLink" to="/feed" exact
                activeClassName="navMenuLinkActive"
                style={{fontSize:'1em',paddingLeft:'15px'}}
+               onClick={this.closeMobileMenu}
                 >
                   {' '}
                   Creative
@@ -124,6 +146,7 @@ class Navbar extends Component {
                 <NavLink className="nav-link navMenuLink" to="/profiles" exact
                activeClassName="navMenuLinkActive"
                style={{fontSize:'1em',paddingLeft:'15px'}}
+               onClick={this.closeMobileMenu}
                 >
                   {' '}
                   Guest Book
@@ -134,6 +157,7 @@ class Navbar extends Component {
             <NavLink className="nav-link navMenuLink" to="/register" exact
             activeClassName="navMenuLinkActive"
             style={{fontSize:'1em', paddingLeft:'15px'}}
+            onClick={this.closeMobileMenu}
             >
               Sign
             </NavLink>
@@ -143,6 +167,7 @@ class Navbar extends Component {
             <NavLink className="nav-link navMenuLink" to="/login" exact
             activeClassName="navMenuLinkActive"
             style={{fontSize:'1em', paddingLeft:'15px'}}
+            onClick={this.closeMobileMenu}
             >
               Log in
             </NavLink>
@@ -165,19 +190,19 @@ class Navbar extends Component {
             />
           </Link>
           <button
-            className="navbar-toggler removeThatBorder"            
+            className="navbar-toggler removeThatBorder"
             type="button"
-            data-toggle="collapse"
-            data-target="#mobile-nav"
+            aria-controls="mobile-nav"
+            aria-expanded={this.state.isMobileMenuOpen}
+            onClick={this.toggleMobileMenu}
             style={{marginLeft:'2px'}}
           >
             <span className="navbar-toggler-icon removeThatBorder" />
           </button>
 
           <div
-            className="navbar-collapse"
+            className={`navbar-collapse ${this.state.isMobileMenuOpen ? 'show' : 'collapse'}`}
             id="mobile-nav"
-            style={{ display: 'flex', flexGrow: 1, justifyContent: 'flex-end' }}
           >
             {isAuthenticated ? (hasAdminPrivileges ? adminLinks : memberLinks) : guestLinks}
           </div>
