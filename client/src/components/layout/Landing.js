@@ -54,7 +54,7 @@ render() {
        <div className="landingInstructions" style={{marginTop:'1.2em', marginBottom:'1.2em', textAlign:'center'}}   >
        
        
-           <br/><h1 className={`LandingHeader fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`} >A blog of mdevelopment posts with<br/>links to all-digital, graphic, musical, and development creative work.</h1>
+           <h1 className={`LandingHeader fadeSlideBase fadeSlideEndSoft ${primaryCopyClass}`} >A blog of mdevelopment posts with links to all-digital, graphic, musical, and development creative work.</h1>
 
         
          
@@ -62,7 +62,7 @@ render() {
        
                 {!hasSignedGuestbook && (
                   <p className={`fadeSlideBase LandingSubcopy ${secondaryCopyClass}`} style={{paddingTop:'0.7em', marginBottom:'0.9em'}} >
-                  Please sign the guestbook!<br/>
+                  Please sign the guestbook!
              
              
                   </p>
